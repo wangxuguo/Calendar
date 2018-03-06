@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.oceansky.teacher">
+
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <!-- 个推SDK权限配置开始 -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <!-- iBeancon功能所需权限 -->
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <!-- 个推3.0电子围栏功能所需权限 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <!-- 浮动通知权限 -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <!-- 自定义权限 -->
+    <uses-permission android:name="getui.permission.GetuiService.com.getui.demo"/>
+
+    <permission
+        android:name="getui.permission.GetuiService.com.getui.demo"
+        android:protectionLevel="normal">
+    </permission>
+
+    <!-- 个推SDK权限配置结束 -->
+    <application
+        android:name=".AndroidApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:persistent="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <activity
+            android:name=".activities.WelcomeActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.TabMainActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activities.LoginActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activities.RegisterActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activities.ForgetPwdActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activities.EditActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity
+            android:name=".activities.SettingActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activities.IntroductionActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activities.CourseActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activities.ClassActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activities.HomeworkActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activities.SettingFeedbackActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activities.ResetPasswordActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activities.OrdersActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activities.BaseWebViewActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activities.MsgExpandCenterActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activities.GuideActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activities.PasswordModifiedDialogActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/DialogStyle"/>
+        <activity
+            android:name=".activities.TokenInvalidDialogActivity"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:theme="@style/DialogStyle"/>
+        <activity
+            android:name=".activities.ClassListActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activities.CreatHomeworkActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activities.KnowledgePointSelectActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/translucentActivity"/>
+        <activity
+            android:name=".activities.PreviewNetDataActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activities.PreviewLocalDataActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activities.AssignHomeworkActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activities.HomeworkSelectActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activities.HomeWorkReportActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activities.CustomErrorActivity"
+            android:process=":error_activity"/>
+        <activity
+            android:name=".activities.CourseDetailActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activities.TeacherDetailActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activities.ModifyHomeworkTitleActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activities.NormalWebViewActivity"
+            android:screenOrientation="portrait"/>
+
+        <!-- letv start -->
+        <activity
+            android:name=".activities.PlayActivity"
+            android:configChanges="keyboard|screenSize|orientation|layoutDirection"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar"/>
+
+        <service
+            android:name="com.letv.pp.service.CdeService"
+            android:process=":cde"/>
+        <!-- letv end -->
+        <!-- 个推SDK配置开始 -->
+        <!-- 配置的第三方参数属性 -->
+        <meta-data
+            android:name="PUSH_APPID"
+            android:value="${getui_push_id}"/> <!-- 替换为第三方应用的APPID -->
+        <meta-data
+            android:name="PUSH_APPKEY"
+            android:value="${getui_push_appkey}"/> <!-- 替换为第三方应用的APPKEY -->
+        <meta-data
+            android:name="PUSH_APPSECRET"
+            android:value="${getui_push_appsecret}"/> <!-- 替换为第三方应用的APPSECRET -->
+        <!-- 配置SDK核心服务 -->
+        <service
+            android:name="com.igexin.sdk.PushService"
+            android:exported="true"
+            android:label="NotificationCenter"
+            android:process=":pushservice"/>
+
+        <receiver
+            android:name=".processProtection.Receiver1"
+            android:process=":pushservice"/>
+
+        <service
+            android:name=".processProtection.Service2"
+            android:process=":process2"/>
+
+        <receiver
+            android:name=".processProtection.Receiver2"
+            android:process=":process2"/>
+
+        <service
+            android:name="com.igexin.sdk.PushServiceUser"
+            android:exported="true"
+            android:label="NotificationCenterUser"/>
+
+        <receiver android:name="com.igexin.sdk.PushReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+                <action android:name="android.intent.action.USER_PRESENT"/>
+                <action android:name="com.igexin.sdk.action.refreshls"/>
+                <!-- 以下三项为可选的action声明，可大大提高service存活率和消息到达速度 -->
+                <action android:name="android.intent.action.MEDIA_MOUNTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.igexin.sdk.PushManagerReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.igexin.sdk.action.pushmanager"/>
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.igexin.sdk.PushActivity"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:process=":pushservice"
+            android:taskAffinity="com.igexin.sdk.PushActivityTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity
+            android:name="com.igexin.sdk.GActivity"
+            android:excludeFromRecents="true"
+            android:exported="true"
+            android:process=":pushservice"
+            android:taskAffinity="com.igexin.sdk.PushActivityTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+
+        <service
+            android:name="com.igexin.download.DownloadService"
+            android:process=":pushservice"/>
+
+        <receiver android:name="com.igexin.download.DownloadReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+
+        <!-- 把"你的包名"替换为第三方应用的包名 -->
+        <provider
+            android:name="com.igexin.download.DownloadProvider"
+            android:authorities="downloads.com.oceansky.teacher"
+            android:exported="true"
+            android:process=":pushservice"/>
+
+        <activity
+            android:name="com.igexin.getuiext.activity.GetuiExtActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:process=":pushservice"
+            android:taskAffinity="android.task.myServicetask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+
+        <receiver
+            android:name="com.igexin.getuiext.service.PayloadReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.igexin.sdk.action.7fjUl2Z3LH6xYy7NQK4ni4"/>
+                <!-- 把"你的APPID"替换为第三方应用的APPID -->
+                <action android:name="com.igexin.sdk.action.${getui_push_id}"/>
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.igexin.getuiext.service.GetuiExtService"
+            android:process=":pushservice"/>
+        <!-- 配置第三方Receiver -->
+        <receiver
+            android:name=".receiver.PushReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.igexin.sdk.action.${getui_push_id}"/>
+            </intent-filter>
+        </receiver>
+        <!-- 个推SDK配置结束 -->
+
+
+        <!-- Bmob 自动更新 配置 -->
+        <meta-data
+            android:name="BMOB_CHANNEL"
+            android:value="${bmob_channel}"/>
+
+        <activity
+            android:name="cn.bmob.v3.update.UpdateDialogActivity"
+            android:theme="@style/mystyle">
+        </activity>
+        <!-- Bmob 自动更新 配置结束 -->
+
+
+        <!-- 友盟统计 -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="${umeng_appkey}"/>
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="${UMENG_CHANNEL_VALUE}"/>
+    </application>
+
+</manifest>

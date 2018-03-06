@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.oceansky.teacher.customviews.CalendarViewPager
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/calendar_view_week"
+    android:layout_width="fill_parent"
+    android:layout_height="39.0dip"
+    android:layout_marginTop="0dp"
+    android:scrollbarStyle="outsideOverlay">
+
+</com.oceansky.teacher.customviews.CalendarViewPager>

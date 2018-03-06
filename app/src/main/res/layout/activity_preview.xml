@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.PreviewNetDataActivity">
+
+    <include
+        android:id="@+id/title_bar"
+        layout="@layout/title_bar"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <WebView
+            android:id="@+id/webview_homework_preview"
+            android:layout_width="match_parent"
+            android:clipToPadding="false"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="65dp"
+            android:visibility="invisible"/>
+
+        <include
+            layout="@layout/layout_homework_select_bottom_tab"
+            android:layout_width="match_parent"
+            android:layout_height="78dp"
+            android:layout_alignParentBottom="true"/>
+
+        <include
+            android:id="@+id/error_layout"
+            layout="@layout/layout_common_error_page"
+            android:visibility="gone"/>
+
+        <include
+            android:id="@+id/loading_layout"
+            layout="@layout/layout_loading"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,62 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="title_bar_width">60dp</dimen>
+    <dimen name="title_bar_height">45dp</dimen>
+    <dimen name="title_bar_text_size">17sp</dimen>
+
+    <dimen name="text_size_smaller">11sp</dimen>
+    <dimen name="text_size_small">13sp</dimen>
+    <dimen name="text_size_mid">15sp</dimen>
+    <dimen name="text_size_big">18sp</dimen>
+    <dimen name="margin_hori_profile_item">25dp</dimen>
+    <dimen name="margin_left_profile_item_icon">15dp</dimen>
+    <dimen name="margin_left_edit_item_name">16dp</dimen>
+    <dimen name="margin_right_edit_arrow">11dp</dimen>
+    <dimen name="margin_right_edit_item_content">13dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+    <dimen name="edit_item_height">44dp</dimen>
+    <dimen name="tab_height">61dp</dimen>
+    <dimen name="class_assistant_item_height">65dp</dimen>
+    <dimen name="tab_course_status">37dp</dimen>
+
+    <dimen name="margin_top_poplist_item">8dp</dimen>
+    <dimen name="padding_top_poplist_item">8dp</dimen>
+    <dimen name="margin_bottem_poplist_item">8dp</dimen>
+    <dimen name="padding_bottem_poplist_item">8dp</dimen>
+    <dimen name="padding_bottom_listview">13dp</dimen>
+    <dimen name="padding_bottom_item_assistant">8dp</dimen>
+    <dimen name="padding_top_item_assistant">13dp</dimen>
+    <dimen name="padding_bottom_gridview">13dp</dimen>
+    <dimen name="width_divide_line">0.5dp</dimen>
+    <dimen name="corner_course_state">2.5dp</dimen>
+    <dimen name="corner_card_view">2.5dp</dimen>
+    <dimen name="dividerheight_listview">13dp</dimen>
+    <dimen name="padding_top_lv">13dp</dimen>
+    <dimen name="margin_left_lv">13dp</dimen>
+    <dimen name="margin_right_lv">13dp</dimen>
+    <!-- -->
+    <dimen name="margin_left_teacher_course">20dp</dimen>
+    <dimen name="radius_btn_update_dialog">8dp</dimen>
+    <!-- homework-->
+    <dimen name="height_homework_list_tab">25dp</dimen>
+    <dimen name="width_homework_list_tab">130dp</dimen>
+    <dimen name="width_homework_list_delete">59dp</dimen>
+    <dimen name="width_homework_list_reuse">84dp</dimen>
+    <dimen name="text_size_homework_list">16sp</dimen>
+    <dimen name="margin_left_class_lv">12dp</dimen>
+    <dimen name="height_homework_type_tab">106dp</dimen>
+    <dimen name="height_homework_select_bottom_tab">65dp</dimen>
+
+    <dimen name="action_bar_height">45dp</dimen>
+    <dimen name="height_order_tab">37dp</dimen>
+    <dimen name="padding_bottom_order_listview">15dp</dimen>
+    <dimen name="padding_top_order_listview">15dp</dimen>
+    <dimen name="height_homework_difficulty_tab">42dp</dimen>
+    <dimen name="width_knowlege_point_list_icon">40dp</dimen>
+    <dimen name="radiu_knowledge_list_indicator">4dp</dimen>
+    <dimen name="toast_y_offset">64dp</dimen>
+    <dimen name="height_homework_select_refresh_layout">56dp</dimen>
+</resources>

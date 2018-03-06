@@ -1,0 +1,1 @@
+include ':app', ':playerlibrelease', ':playerskin', ':LibMarsdaemon', ':ExpandableLayout',':libExpandTextView',"caldroid"

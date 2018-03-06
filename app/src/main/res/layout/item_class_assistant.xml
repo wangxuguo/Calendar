@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:paddingBottom="@dimen/padding_bottom_item_assistant"
+              android:paddingTop="@dimen/padding_top_item_assistant"
+              android:visibility="visible">
+
+    <RelativeLayout
+        android:id="@+id/class_assistant_rl_call"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/class_assistant_item_height"
+        android:background="@drawable/selector_rectangle_stroke_card_bg">
+
+        <RelativeLayout
+            android:id="@+id/class_assistant_rl_photo"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="13dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/class_assistant_iv_photo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_class_photo_default"/>
+
+            <TextView
+                android:id="@+id/class_assistant_tv_photo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_class_photo_default"
+                android:gravity="center"
+                android:textColor="@color/base_color_white"
+                android:textSize="@dimen/text_size_mid"/>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/class_assistant_iv_phone"
+            android:layout_width="65dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="0.5dp"
+            android:background="@drawable/bg_class_assistant_phone"
+            android:scaleType="center"
+            android:src="@mipmap/icon_class_telephone"/>
+
+        <TextView
+            android:id="@+id/class_assistant_tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_toLeftOf="@id/class_assistant_iv_phone"
+            android:layout_toRightOf="@id/class_assistant_rl_photo"
+            android:singleLine="true"
+            android:textColor="@color/text_dark"
+            android:textSize="@dimen/text_size_mid"/>
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/layout_empty_page"
+        layout="@layout/layout_empty_page"
+        android:visibility="gone"/>
+</LinearLayout>
+

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white">
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/homework_sv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <cn.bingoogolapple.refreshlayout.BGARefreshLayout
+            android:id="@+id/homework_select_webview_refresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <WebView
+                    android:id="@+id/webview_homework_select"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+                <include
+                    android:id="@+id/error_layout"
+                    layout="@layout/layout_homework_common_state_page"
+                    android:visibility="gone"/>
+            </RelativeLayout>
+        </cn.bingoogolapple.refreshlayout.BGARefreshLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <include
+        android:id="@+id/loading_layout"
+        layout="@layout/layout_loading"
+        android:visibility="gone"/>
+
+    <include
+        android:id="@+id/not_online_layout"
+        layout="@layout/layout_homework_common_state_page"
+        android:visibility="gone"/>
+</RelativeLayout>

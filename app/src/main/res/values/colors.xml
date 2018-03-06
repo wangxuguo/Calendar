@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--base-->
+    <color name="base_color_white">#ffffff</color>
+    <color name="base_color_blue">#1c95f3</color>
+    <color name="activity_bg_gray">#f5f5f5</color>
+    <!--tab-->
+    <color name="tab_main_text_normal">#666666</color>
+    <color name="tab_main_text_selected">#1c95f3</color>
+    <color name="main_tab_bg">#fcfcfc</color>
+    <!--标题栏-->
+    <color name="title_bar_bg">@color/tab_main_text_selected</color>
+    <color name="title_bar_text_color">@color/base_color_white</color>
+
+    <!-- text -->
+    <color name="edit_normal_text_color">#333333</color>
+    <color name="edit_hint_text_color">#b2b2b2</color>
+    <color name="edit_hint_text_color_light">#cccccc</color>
+    <color name="text_blue">#1c95f3</color>
+    <color name="text_dark">#333333</color>
+    <color name="text_gray_deep">#666666</color>
+    <color name="text_gray_light">#999999</color>
+    <color name="text_invalid">#cccccc</color>
+    <color name="text_course_state_finish">#0793f6</color>
+    <color name="text_course_state_future">#ff843a</color>
+    <color name="text_course_state_inclass">#0ce79c</color>
+    <color name="text_course_state_other">#b2b2b2</color>
+    <color name="text_order_state_close">#cccccc</color>
+
+    <color name="divide_line_color">#e8e8e8</color>
+    <color name="divide_line_color_light">#f5f5f5</color>
+
+    <!--按钮-->
+    <color name="button_normal_background_color">#1c95f3</color>
+    <color name="button_focus_background_color">#085abc</color>
+    <color name="button_disable_background_color">#dddddd</color>
+    <color name="card_nomal_background_color">#ffffff</color>
+    <color name="card_focus_background_color">#e9e9e9</color>
+    <color name="btn_class_assistant_phone">#f2f9fd</color>
+
+    <!--课表相关颜色    -->
+    <color name="caldroid_white">#ffffff</color>
+    <color name="caldroid_selected">#33556688</color>
+    <color name="caldroid_black">#333333</color>
+    <color name="caldroid_transparent">#00000000</color>
+    <!-- For settings framework -->
+    <color name="caldroid_lighter_gray">#666666</color>
+    <color name="caldroid_gray">#CCC</color>
+    <color name="caldroid_darker_gray">#cccccc</color>
+    <color name="caldroid_middle_gray">#666666</color>
+    <color name="caldroid_title_bg">#62c8a6</color>
+    <color name="caldroid_today_textcolor">#1c95f3</color>
+    <color name="white">#ffffff</color>
+    <!-- A light Holo shade of blue -->
+    <color name="caldroid_holo_blue_light">#ff33b5e5</color>
+    <!-- A dark Holo shade of blue -->
+    <color name="caldroid_holo_blue_dark">#ff0099cc</color>
+    <!-- A really bright Holo shade of blue -->
+    <color name="caldroid_sky_blue">#FFA3E8F7</color>
+    <color name="caldroid_333">#ffffffff</color>
+    <color name="caldroid_555">#555</color>
+    <color name="caldroid_light_red">#ff7f7f</color>
+    <color name="caldroid_cell_dot_color">#ff843a</color>
+    <!-- pop周选择List Item 颜色  -->
+    <color name="list_item_bg">#ffffff</color>
+    <color name="list_item_bg_pressed">#cee8fc</color>
+    <color name="list_item_textcolor">#666666</color>
+    <color name="list_item_textcolor_pressed">#1c95fc</color>
+    <!-- 消息中心Tab 选择颜色 -->
+    <color name="tab_msg_textcolor_selected">#1c95f3</color>
+    <color name="tab_msg_textcolor_unselected">#666666</color>
+    <color name="msg_divider_color">#e8e8e8</color>
+
+    <!-- homework-->
+    <color name="text_color_homework_type_normal">#dddddd</color>
+    <color name="text_color_homework_select_change">#11d14c</color>
+
+    <color name="line_color">#e1e1e1</color>
+
+    <color name="tab_main_text_1">#999999</color>
+    <color name="tab_main_text_2">#1c95fc</color>
+    <color name="tab_main_text_3">#666666</color>
+</resources>

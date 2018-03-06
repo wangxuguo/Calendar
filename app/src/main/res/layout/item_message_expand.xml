@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ffffff"
+                android:descendantFocusability="blocksDescendants"
+                android:padding="16dp">
+
+    <TextView
+        android:id="@+id/message_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/message_title"
+        android:layout_alignParentRight="true"
+        android:textColor="#999999"
+        android:textSize="12sp"/>
+
+    <TextView
+        android:id="@+id/message_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/message_time"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textColor="#333333"
+        android:textSize="16sp"/>
+
+    <com.ms.square.android.expandabletextview.ExpandableTextView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:expandableTextView="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/expand_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/message_title"
+        android:layout_marginRight="10dp"
+        android:paddingTop="1dp"
+        android:paddingBottom="1dp"
+        android:orientation="vertical"
+        expandableTextView:animAlphaStart="1"
+        expandableTextView:animDuration="200"
+        expandableTextView:collapseDrawable="@mipmap/icon_message_content_arrow_up"
+        expandableTextView:expandDrawable="@mipmap/icon_message_content_arrow_down"
+        expandableTextView:maxCollapsedLines="2">
+
+        <TextView
+            android:id="@id/expandable_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#999999"
+            android:layout_marginRight="13dp"
+            android:textSize="13sp"/>
+
+        <ImageButton
+            android:id="@id/expand_collapse"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="-13dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|bottom"
+            android:contentDescription="@null"
+            android:background="@null"/>
+    </com.ms.square.android.expandabletextview.ExpandableTextView>
+
+    <View
+        android:id="@+id/message_haveread_dot"
+        android:layout_width="6dp"
+        android:layout_height="6dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/message_time"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/message_haveread_dot_bg"
+        android:visibility="gone"
+        />
+</RelativeLayout>

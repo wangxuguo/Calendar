@@ -1,0 +1,608 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.oceansky.teacher.activities.EditActivity">
+
+    <include
+        android:id="@+id/title_bar"
+        layout="@layout/title_bar"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/activity_bg_gray"
+            android:clickable="true"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:id="@+id/edit_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="invisible">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/bg_edit_rectangle_round_corner_white"
+                    android:padding="1dp">
+
+                    <RelativeLayout
+                        android:id="@+id/edit_rl_photo"
+                        android:layout_width="match_parent"
+                        android:layout_height="73dp"
+                        android:background="@drawable/selector_rectangle_card_bg"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/margin_left_edit_item_name"
+                            android:text="@string/profile_edit_photo"
+                            android:textColor="@color/text_gray_light"
+                            android:textSize="@dimen/text_size_small"/>
+
+                        <ImageView
+                            android:id="@+id/arrow1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/margin_right_edit_arrow"
+                            android:src="@mipmap/icon_arrow_right_gray"/>
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/edit_iv_photo"
+                            android:layout_width="54dp"
+                            android:layout_height="54dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/margin_right_edit_item_content"
+                            android:layout_toLeftOf="@id/arrow1"
+                            android:scaleType="centerCrop"
+                            android:src="@mipmap/profile_photo_default"/>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="13dp"
+                    android:background="@drawable/bg_edit_rectangle_round_corner_white"
+                    android:orientation="vertical"
+                    android:padding="1dp">
+
+                    <RelativeLayout
+                        android:id="@+id/edit_rl_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/edit_item_height"
+                        android:background="@drawable/selector_rectangle_card_bg">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/margin_left_edit_item_name"
+                            android:text="@string/profile_edit_name"
+                            android:textColor="@color/text_gray_light"
+                            android:textSize="@dimen/text_size_small"/>
+
+                        <ImageView
+                            android:id="@+id/arrow2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/margin_right_edit_arrow"
+                            android:src="@mipmap/icon_arrow_right_gray"/>
+
+                        <EditText
+                            android:id="@+id/edit_et_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/margin_right_edit_item_content"
+                            android:layout_toLeftOf="@id/arrow2"
+                            android:background="@android:color/transparent"
+                            android:gravity="center_vertical|right"
+                            android:hint="@string/profile_edit_hint_fillname"
+                            android:inputType="text"
+                            android:lines="1"
+                            android:maxLength="15"
+                            android:scaleType="centerCrop"
+                            android:src="@mipmap/profile_photo_default"
+                            android:textColor="@color/text_gray_deep"
+                            android:textColorHint="@color/edit_hint_text_color"
+                            android:textCursorDrawable="@null"
+                            android:textSize="@dimen/text_size_small"/>
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:background="@color/divide_line_color"/>
+
+                    <RelativeLayout
+                        android:id="@+id/edit_rl_sex"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/edit_item_height"
+                        android:background="@drawable/selector_rectangle_card_bg">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/margin_left_edit_item_name"
+                            android:text="@string/profile_edit_sex"
+                            android:textColor="@color/text_gray_light"
+                            android:textSize="@dimen/text_size_small"/>
+
+                        <ImageView
+                            android:id="@+id/arrow3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/margin_right_edit_arrow"
+                            android:src="@mipmap/icon_arrow_right_gray"/>
+
+                        <TextView
+                            android:id="@+id/edit_tv_sex"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/margin_right_edit_item_content"
+                            android:layout_toLeftOf="@id/arrow3"
+                            android:scaleType="centerCrop"
+                            android:src="@mipmap/profile_photo_default"
+                            android:textColor="@color/text_gray_deep"
+                            android:textSize="@dimen/text_size_small"/>
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:background="@color/divide_line_color"/>
+
+                    <RelativeLayout
+                        android:id="@+id/edit_rl_birthday"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/edit_item_height"
+                        android:background="@drawable/selector_rectangle_card_bg">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/margin_left_edit_item_name"
+                            android:text="@string/profile_edit_birthday"
+                            android:textColor="@color/text_gray_light"
+                            android:textSize="@dimen/text_size_small"/>
+
+                        <ImageView
+                            android:id="@+id/arrow4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/margin_right_edit_arrow"
+                            android:src="@mipmap/icon_arrow_right_gray"/>
+
+                        <TextView
+                            android:id="@+id/edit_tv_birthday"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/margin_right_edit_item_content"
+                            android:layout_toLeftOf="@id/arrow4"
+                            android:scaleType="centerCrop"
+                            android:src="@mipmap/profile_photo_default"
+                            android:textColor="@color/text_gray_deep"
+                            android:textSize="@dimen/text_size_small"/>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="13dp"
+                    android:background="@drawable/bg_edit_rectangle_round_corner_white"
+                    android:orientation="vertical"
+                    android:padding="1dp">
+
+                    <RelativeLayout
+                        android:id="@+id/edit_rl_first_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/edit_item_height"
+                        android:background="@drawable/selector_rectangle_card_bg">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/margin_left_edit_item_name"
+                            android:text="@string/profile_edit_first_teachtime"
+                            android:textColor="@color/text_gray_light"
+                            android:textSize="@dimen/text_size_small"/>
+
+                        <ImageView
+                            android:id="@+id/arrow5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/margin_right_edit_arrow"
+                            android:src="@mipmap/icon_arrow_right_gray"/>
+
+                        <TextView
+                            android:id="@+id/edit_tv_first_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/margin_right_edit_item_content"
+                            android:layout_toLeftOf="@id/arrow5"
+                            android:scaleType="centerCrop"
+                            android:src="@mipmap/profile_photo_default"
+                            android:textColor="@color/text_gray_deep"
+                            android:textSize="@dimen/text_size_small"/>
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:background="@color/divide_line_color"/>
+
+                    <RelativeLayout
+                        android:id="@+id/edit_rl_school"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/edit_item_height"
+                        android:background="@drawable/selector_rectangle_card_bg">
+
+                        <TextView
+                            android:id="@+id/tv_shcool"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/margin_left_edit_item_name"
+                            android:text="@string/profile_edit_graduate_school"
+                            android:textColor="@color/text_gray_light"
+                            android:textSize="@dimen/text_size_small"/>
+
+                        <ImageView
+                            android:id="@+id/arrow6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/margin_right_edit_arrow"
+                            android:src="@mipmap/icon_arrow_right_gray"/>
+
+                        <EditText
+                            android:id="@+id/edit_et_school"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/margin_right_edit_item_content"
+                            android:layout_marginLeft="@dimen/margin_right_edit_item_content"
+                            android:layout_toLeftOf="@id/arrow6"
+                            android:layout_toRightOf="@id/tv_shcool"
+                            android:background="@android:color/transparent"
+                            android:gravity="center_vertical|right"
+                            android:hint="@string/profile_edit_hint_fill_graduate_school"
+                            android:inputType="text"
+                            android:lines="1"
+                            android:src="@mipmap/profile_photo_default"
+                            android:textColor="@color/text_gray_deep"
+                            android:textColorHint="@color/edit_hint_text_color"
+                            android:textCursorDrawable="@null"
+                            android:textSize="@dimen/text_size_small"/>
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:background="@color/divide_line_color"/>
+
+                    <RelativeLayout
+                        android:id="@+id/edit_rl_education"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/edit_item_height"
+                        android:background="@drawable/selector_rectangle_card_bg">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/margin_left_edit_item_name"
+                            android:text="@string/profile_edit_education"
+                            android:textColor="@color/text_gray_light"
+                            android:textSize="@dimen/text_size_small"/>
+
+                        <ImageView
+                            android:id="@+id/arrow7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/margin_right_edit_arrow"
+                            android:src="@mipmap/icon_arrow_right_gray"/>
+
+                        <TextView
+                            android:id="@+id/edit_tv_education"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/margin_right_edit_item_content"
+                            android:layout_toLeftOf="@id/arrow7"
+                            android:scaleType="centerCrop"
+                            android:src="@mipmap/profile_photo_default"
+                            android:textColor="@color/text_gray_deep"
+                            android:textSize="@dimen/text_size_small"/>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="13dp"
+                    android:background="@drawable/bg_edit_rectangle_round_corner_white"
+                    android:orientation="vertical"
+                    android:padding="1dp">
+
+                    <RelativeLayout
+                        android:id="@+id/edit_rl_wechat"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/edit_item_height"
+                        android:background="@drawable/selector_rectangle_card_bg">
+
+                        <TextView
+                            android:id="@+id/tv_wechat"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/margin_left_edit_item_name"
+                            android:text="@string/profile_edit_wechat"
+                            android:textColor="@color/text_gray_light"
+                            android:textSize="@dimen/text_size_small"/>
+
+                        <ImageView
+                            android:id="@+id/arrow8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/margin_right_edit_arrow"
+                            android:src="@mipmap/icon_arrow_right_gray"/>
+
+                        <EditText
+                            android:id="@+id/edit_et_wechat"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/margin_right_edit_item_content"
+                            android:layout_marginLeft="@dimen/margin_right_edit_item_content"
+                            android:layout_toLeftOf="@id/arrow8"
+                            android:layout_toRightOf="@id/tv_wechat"
+                            android:background="@android:color/transparent"
+                            android:gravity="center_vertical|right"
+                            android:hint="@string/profile_edit_hint_wechat"
+                            android:inputType="text"
+                            android:lines="1"
+                            android:src="@mipmap/profile_photo_default"
+                            android:textColor="@color/text_gray_deep"
+                            android:textColorHint="@color/edit_hint_text_color"
+                            android:textCursorDrawable="@null"
+                            android:textSize="@dimen/text_size_small"/>
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:background="@color/divide_line_color"/>
+
+                    <RelativeLayout
+                        android:id="@+id/edit_rl_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/edit_item_height"
+                        android:background="@drawable/selector_rectangle_card_bg">
+
+                        <TextView
+                            android:id="@+id/tv_email"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/margin_left_edit_item_name"
+                            android:text="@string/profile_edit_email"
+                            android:textColor="@color/text_gray_light"
+                            android:textSize="@dimen/text_size_small"/>
+
+                        <ImageView
+                            android:id="@+id/arrow9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/margin_right_edit_arrow"
+                            android:src="@mipmap/icon_arrow_right_gray"/>
+
+                        <EditText
+                            android:id="@+id/edit_et_email"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/margin_right_edit_item_content"
+                            android:layout_marginLeft="@dimen/margin_right_edit_item_content"
+                            android:layout_toLeftOf="@id/arrow9"
+                            android:layout_toRightOf="@id/tv_email"
+                            android:background="@android:color/transparent"
+                            android:gravity="center_vertical|right"
+                            android:hint="@string/profile_edit_hint_email"
+                            android:inputType="text"
+                            android:lines="1"
+                            android:src="@mipmap/profile_photo_default"
+                            android:textColor="@color/text_gray_deep"
+                            android:textColorHint="@color/edit_hint_text_color"
+                            android:textCursorDrawable="@null"
+                            android:textSize="@dimen/text_size_small"/>
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="13dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/bg_edit_rectangle_round_corner_white"
+                    android:orientation="vertical"
+                    android:padding="1dp">
+
+                    <RelativeLayout
+                        android:id="@+id/edit_rl_qualification"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/edit_item_height"
+                        android:background="@drawable/selector_rectangle_card_bg">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/margin_left_edit_item_name"
+                            android:text="@string/profile_edit_certification"
+                            android:textColor="@color/text_gray_light"
+                            android:textSize="@dimen/text_size_small"/>
+
+                        <ImageView
+                            android:id="@+id/arrow10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/margin_right_edit_arrow"
+                            android:src="@mipmap/icon_arrow_right_gray"/>
+
+                        <TextView
+                            android:id="@+id/edit_tv_qualification"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/margin_right_edit_item_content"
+                            android:layout_toLeftOf="@id/arrow10"
+                            android:scaleType="centerCrop"
+                            android:src="@mipmap/profile_photo_default"
+                            android:text="name"
+                            android:textColor="@color/text_gray_deep"
+                            android:textSize="@dimen/text_size_small"/>
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:background="@color/divide_line_color"/>
+
+                    <RelativeLayout
+                        android:id="@+id/edit_rl_experience"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/edit_item_height"
+                        android:background="@drawable/selector_rectangle_card_bg">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/margin_left_edit_item_name"
+                            android:text="@string/profile_edit_experience"
+                            android:textColor="@color/text_gray_light"
+                            android:textSize="@dimen/text_size_small"/>
+
+                        <ImageView
+                            android:id="@+id/arrow11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/margin_right_edit_arrow"
+                            android:src="@mipmap/icon_arrow_right_gray"/>
+
+                        <TextView
+                            android:id="@+id/edit_tv_experience"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/margin_right_edit_item_content"
+                            android:layout_toLeftOf="@id/arrow11"
+                            android:scaleType="centerCrop"
+                            android:src="@mipmap/profile_photo_default"
+                            android:text="name"
+                            android:textColor="@color/text_gray_deep"
+                            android:textSize="@dimen/text_size_small"/>
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <cn.finalteam.galleryfinal.widget.HorizontalListView
+                    android:id="@+id/lv_photo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:cacheColorHint="@android:color/transparent"
+                    android:clipToPadding="false"
+                    android:fadingEdge="none"
+                    android:horizontalSpacing="2dp"
+                    android:numColumns="3"
+                    android:verticalSpacing="2dp"/>
+
+            </LinearLayout>
+        </ScrollView>
+
+        <include
+            android:id="@+id/error_layout"
+            layout="@layout/layout_common_error_page"
+            android:visibility="gone"/>
+
+        <include
+            android:id="@+id/loading_layout"
+            layout="@layout/loading"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+</LinearLayout>
+

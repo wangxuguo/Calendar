@@ -1,0 +1,304 @@
+<resources>
+    <string name="app_name">鹦鹉螺教师端</string>
+    <string-array name="main_tab_name">
+        <item>课表</item>
+        <item>班级</item>
+        <item>我</item>
+    </string-array>
+    <string-array name="msgcenter_tab_name">
+        <item>公共消息</item>
+        <item>个人消息</item>
+    </string-array>
+    <string-array name="course_tab_name">
+        <item>全部</item>
+        <item>上课中</item>
+        <item>待开课</item>
+        <item>已结课</item>
+    </string-array>
+    <string-array name="homework_tab_name">
+        <item>待布置</item>
+        <item>已布置</item>
+    </string-array>
+
+    <string name="save">保存</string>
+    <string name="unsave">不保存</string>
+
+    <!-- 登录注册 -->
+    <string name="resend_seccode">重新获取</string>
+    <string name="user_agreement">已阅读并同意&lt;font color=\"#1c95f3\"&gt;%1$s&lt;/font&gt;</string>
+    <string name="hint_phone_number">请输入手机号</string>
+    <string name="hint_pwd">请输入密码</string>
+    <string name="btn_login">登录</string>
+    <string name="tv_forget_pwd">忘记密码?</string>
+    <string name="tv_register">注册</string>
+
+    <string name="prompt">提示</string>
+    <string name="confirm">确定</string>
+    <string name="back">退出</string>
+    <string name="dismiss">隐藏</string>
+    <string name="login_out">是否退出登录？</string>
+
+    <string name="login_register_class">请&lt;font color=\"#1c95f3\"&gt;注册/登录&lt;/font&gt;后查看课表</string>
+
+    <!-- BMOB -->
+    <string name="bmob_common_action_info_exist">正在下载中.</string>
+    <string name="bmob_common_info_interrupt">下载出错啦，请检查网络后继续。</string>
+    <string name="bmob_common_action_pause">暂停</string>
+    <string name="bmob_common_action_continue">继续</string>
+    <string name="bmob_common_action_cancel">取消</string>
+    <string name="bmob_common_download_notification_prefix">正在下载: </string>
+    <string name="bmob_common_pause_notification_prefix">暂停: </string>
+    <string name="bmob_common_start_download_notification">正在下载应用</string>
+    <string name="bmob_common_start_patch_notification">正在更新安装包</string>
+    <string name="bmob_common_network_break_alert">请连接网络后再尝试！</string>
+    <string name="bmob_common_download_failed">下载失败</string>
+    <string name="bmob_common_download_finish">下载完成，请点击安装</string>
+    <string name="bmob_common_patch_finish">更新完成，请点击安装</string>
+    <string name="bmob_common_silent_download_finish">新版本已经准备好，请点击安装</string>
+    <string name="BMBreak_Network">未联网</string>
+    <string name="BMUpdateTitle">发现新版本</string>
+    <string name="BMNewVersion">最新版本: </string>
+    <string name="BMUpdateContent">更新内容</string>
+    <string name="BMUpdateSize">仅需要下载:</string>
+    <string name="BMTargetSize">新版本大小:</string>
+    <string name="BMGprsCondition">（提示：非WIFI环境）</string>
+    <string name="BMUpdateNow">立即更新</string>
+    <string name="BMAppUpdate">应用更新</string>
+    <string name="BMNotNow">以后再说</string>
+    <string name="BMIgnore">忽略该版</string>
+    <string name="BMToast_IsUpdating">正在更新中....</string>
+    <string name="BMDialog_InstallAPK">最新版本已下载，是否安装？</string>
+    <string name="BMUpdateCheck">v3.1.4Beta</string>
+
+    <string name="feedback_edittext_hint_suggestion">有问题或建议，请告诉我们</string>
+    <string name="feedback_edittext_hint_contact">您的手机号或QQ号</string>
+    <string name="edittext_hint_homework_tilte">请输入作业名称（建议讲次或知识点）</string>
+
+    <!-- button -->
+    <string name="btn_confirm">确认</string>
+    <string name="btn_confirm_assign">确认布置</string>
+    <string name="btn_commit">提交</string>
+    <string name="btn_cancel">取消</string>
+    <string name="btn_register">注册</string>
+    <string name="btn_confirm_set">去设置</string>
+
+    <!-- hint -->
+    <string name="reset_pwd_et_hint_new">请输入新密码（6-16字母数字组合）</string>
+    <string name="reset_pwd_et_hint_old">请输入原密码</string>
+
+    <!-- toast -->
+    <string name="reset_pwd_old_empty">请输入原密码</string>
+    <string name="reset_pwd_new_empty">请输入新密码</string>
+    <string name="reset_pwd_new_not_conform">新密码不符合规范，请重设</string>
+    <string name="reset_pwd_same">新密码不能与原密码相同</string>
+    <string name="reset_pwd_success">修改成功,请重新登录</string>
+    <string name="reset_pwd_old_not_match">原密码错误，请重新输入</string>
+    <string name="toast_error_time_out">连接超时</string>
+    <string name="toast_error_no_net">网络已断开</string>
+    <string name="toast_error_net_breakdown">请求失败，稍后再试</string>
+    <string name="toast_error_email_invalid">请输入正确的邮箱</string>
+    <string name="toast_edit_success">资料修改成功</string>
+    <string name="toast_check_name_empty">请输入姓名</string>
+    <string name="toast_check_school_empty">请输入院校</string>
+    <string name="toast_check_email_invalied">请输入正确的邮箱</string>
+    <string name="toast_check_name_invalied">请输入正确的姓名</string>
+    <string name="toast_check_school_invalied">请输入正确的院校</string>
+    <string name="toast_check_phone_empty">请输入手机号</string>
+    <string name="toast_check_phone_invalid">请输入正确的手机号</string>
+    <string name="toast_check_code_empty">请输入验证码</string>
+    <string name="toast_check_pwd_empty">请输入密码</string>
+    <string name="toast_check_pwd_invalid">密码不符合规范，请重设</string>
+
+    <!-- progress -->
+    <string name="progress_modifying">修改中</string>
+
+    <!-- title -->
+    <string name="title_bar_reset_pwd">修改密码</string>
+    <string name="title_bar_course">我的课程</string>
+    <string name="titlt_orders">我的订单</string>
+    <string name="title_creat_homework">新建作业</string>
+    <string name="title_homework_title">作业名称</string>
+    <string name="title_knowledge_point_select">选择知识点</string>
+    <string name="title_my_class">我的班级</string>
+    <string name="title_homework_preview">题目预览</string>
+    <string name="title_homework_assign">布置作业</string>
+    <string name="title_homework_select">选择题目</string>
+
+    <string name="company_name">北京江海云霄教育科技有限公司</string>
+    <string name="company_website">www.yingwuluo.org</string>
+
+    <!-- empty error page -->
+    <string name="empty_msg_class">暂无班级</string>
+    <string name="empty_msg_student">暂无学生</string>
+    <string name="empty_msg_orders">暂无订单</string>
+    <string name="empty_msg_course">暂无课程</string>
+    <string name="empty_msg_homework_done">您还没有已布置作业!</string>
+    <string name="empty_msg_homework_select">该功能暂未上线，敬请期待！</string>
+    <string name="empty_msg_homework">您还没有待布置作业，&lt;font color=\"#1c95f3\"&gt;立即新建&lt;/font&gt;</string>
+    <string name="error_msg_no_net">呀，没网了</string>
+    <string name="error_msg_load_failure">加载失败，请点击重试</string>
+    <string name="error_msg_can_not_visit">该页面暂时无法查看</string>
+    <string name="error_msg_load_homework_empty">暂无题目！</string>
+    <string name="msg_load_homework_no_more">当前类别题目已被您看完~</string>
+    <string name="msg_load_homework_no_more_sub">尝试 “换一批题” 可重复浏览</string>
+    <string name="error_msg_unlogin">请&lt;font color=\"#1c95f3\"&gt;注册/登录&lt;/font&gt;后查看班级</string>
+
+    <!-- 消息中心 -->
+    <string name="msgcenter">消息中心</string>
+    <string name="msgcenter_no_personal_msg">暂无个人消息</string>
+    <string name="msgcenter_no_common_msg">暂无公共消息</string>
+    <!-- 教师课表 -->
+    <string name="teachercourse_have_noclass">本日无课</string>
+    <!-- course state -->
+    <string name="course_status_finish">已结课</string>
+    <string name="course_status_future">待开课</string>
+    <string name="course_status_inclass">上课中</string>
+    <string name="course_status_other">其他</string>
+
+    <!-- dialog-->
+    <string name="dialog_msg_pwd_modified">密码已修改，请重新登录</string>
+    <string name="dialog_msg_update_permission_tip">更新软件需要您打开存储权限。打开方法为：设置页面中打开“权限管理”，从中找到存储开关并打开。</string>
+
+    <string name="error_msg_no_infor">暂无老师信息</string>
+    <string name="title_student_infor">学生资料</string>
+    <string name="title_edit_enable">编辑个人资料</string>
+    <string name="title_edit_disable">个人资料</string>
+    <string name="title_forget_pwd">忘记密码</string>
+    <string name="title_setting">设置</string>
+    <string name="title_feedback">意见反馈</string>
+    <string name="title_introduce">关于我们</string>
+    <string name="toast_send_code_success">发送验证码成功</string>
+    <string name="toast_phone_unregiste">该号码尚未注册</string>
+    <string name="toast_phone_invalid">请输入正确的手机号</string>
+    <string name="toast_client_invalid">非教师端用户请到鹦鹉螺其他平台登录</string>
+    <string name="toast_phone_not_exist">该号码尚未注册</string>
+    <string name="toast_error_verify_code">验证码错误或已失效</string>
+    <string name="toast_error_pwd_or_num">用户名或密码错误</string>
+    <string name="toast_login_success">登录成功</string>
+    <string name="toast_check_agreement">请阅读并勾选用户协议</string>
+    <string name="title_agreement">用户协议</string>
+    <string name="toast_phone_registered">该号码已注册，请直接登录</string>
+    <string name="toast_retrive_verify_code">请求验证码失败，请重新获取</string>
+    <string name="toast_register_success">注册成功</string>
+    <string name="toast_update_already_update">已是最新版本</string>
+    <string name="toast_save_success">保存成功</string>
+
+    <!-- 消息中心 -->
+    <string name="toast_messagecenter_load_fail">加载失败,请稍候重试!</string>
+    <string name="title_teacher_detail">教师详情</string>
+    <string name="title_teachercourse_detail">课程详情</string>
+    <string name="title_html_right_button">我的</string>
+
+
+    <string name="btn_login_expiry">登录状态失效，请重新登录</string>
+    <string name="btn_login_out">退出登录</string>
+    <string name="profile_homework">我的作业</string>
+    <string name="profile_class">我的班级</string>
+    <string name="profile_msg">我的消息</string>
+    <string name="profile_orders">我的订单</string>
+    <string name="profile_course">我的课程</string>
+    <string name="profile_setting">设置</string>
+
+    <!--homework-->
+    <string name="assign_homework_assigntime">作业布置时间</string>
+    <string name="assign_homework_deadline">作业截止时间</string>
+    <string name="assign_homework_answer_publish_time">公布答案时间</string>
+    <string name="dialog_unsave_homework_back">您选择的作业还没有保存，确认退出？</string>
+    <string name="dialog_unsave_homework_save">您选择的作业还没有保存，是否保存？</string>
+    <string name="dialog_create_homework_unsave">您还没有保存当前选择的作业，确认退出？</string>
+    <string name="dialog_assign_homework">作业已布置成功！\n请记得随后查看学生作业的报告！</string>
+    <string name="toast_homework_title_empty">请输入作业名称</string>
+    <string name="toast_homework_grade_empty">请选择年级</string>
+    <string name="toast_homework_lesson_empty">请选择科目</string>
+    <string name="btn_assign_homework">布置作业</string>
+    <string name="btn_save_homework">保存作业</string>
+    <string name="btn_add_homework">增加题目</string>
+    <string name="btn_know">我知道了</string>
+
+    <string name="homework_wrongquestions_detail">错题排行详情</string>
+    <string name="homework_report">作业报告</string>
+    <string name="homework_student_status">作业情况</string>
+    <string name="assign_homework_answer_after_assigned">学生提交作业后公布</string>
+    <string name="assign_homework_class_select">请选择您要布置的班级</string>
+    <string name="create_homework_grade_select">请选择年级</string>
+    <string name="create_homework_lesson_select">请选择科目</string>
+    <string name="profile_edit_photo">头像</string>
+    <string name="profile_edit_name">姓名</string>
+    <string name="profile_edit_hint_fillname">请填写姓名</string>
+    <string name="profile_edit_sex">性别</string>
+    <string name="profile_edit_birthday">生日</string>
+    <string name="profile_edit_first_teachtime">初次任教时间</string>
+    <string name="profile_edit_graduate_school">毕业院校</string>
+    <string name="profile_edit_hint_fill_graduate_school">请填写院校</string>
+    <string name="profile_edit_education">学历</string>
+    <string name="profile_edit_wechat">微信</string>
+    <string name="profile_edit_hint_wechat">请填写微信号</string>
+    <string name="profile_edit_email">邮箱</string>
+    <string name="profile_edit_hint_email">请填写邮箱</string>
+    <string name="profile_edit_certification">是否有教师资格证</string>
+    <string name="profile_edit_experience">是否有在线授课经验</string>
+    <string name="btn_get_verifycode">获取验证码</string>
+    <string name="hint_fill_phone_number">请输入手机号</string>
+    <string name="hint_fill_vertifycode">请输入验证码</string>
+    <string name="hint_fill_password">请输入密码（6-16字母数字组合）</string>
+    <string name="forget_password_btn_finish">完成</string>
+    <string name="introducation_version">当前版本：v%s</string>
+    <string name="knowlege_point_select_textbook">请选择教材</string>
+    <string name="knowlege_point_select_chapter">请选择章节</string>
+    <string name="paly_feedback">反馈</string>
+    <string name="play_next">下一个</string>
+    <string name="register_already_registered">已有账号？直接</string>
+    <string name="setting_modify_password">修改密码</string>
+    <string name="setting_update">版本更新</string>
+    <string name="setting_clean_cache">清除缓存</string>
+    <string name="setting_about_us">关于我们</string>
+    <string name="setting_value_us">评价我们</string>
+    <string name="setting_feedback">意见反馈</string>
+    <string name="dialog_photo_select">设置头像</string>
+    <string name="dialog_photo_select_mode_camera">相机拍照</string>
+    <string name="dialog_photo_select_mode_gallery">相册选取</string>
+    <string name="dialog_token_invalid_message">密码已修改，请重新登录</string>
+    <string name="name">姓名</string>
+    <string name="price_per_class_hour">课时费</string>
+    <string name="class_hour">课时</string>
+    <string name="performence">绩效</string>
+    <string name="btn_finish">完成</string>
+    <string name="homework_type_choice">选择题</string>
+    <string name="homework_type_completion">填空题</string>
+    <string name="homework_type_checking">判断题</string>
+    <string name="homework_select_change_set">换一批题</string>
+    <string name="toast_assign_homework_assigntime_invalide">布置时间不能小于当前时间</string>
+    <string name="toast_assign_homework_deadline_invalide">截止时间不能小于布置时间</string>
+    <string name="toast_error_input_error">您的输入不正确</string>
+    <string name="title_homework_report">作业报告</string>
+    <string name="homework_detail">作业情况</string>
+    <string name="error_msg_page_empty">页面暂时看不了喽 ~</string>
+    <!-- webview 404 页面缺省文字 -->
+    <string name="error_page_cannot_visit">该页面暂时无法查看</string>
+    <string name="homework_change_knowlege_point">更换知识点</string>
+    <string name="homework_btn_preview">预览题目</string>
+    <string name="homework_difficulty_easy">简单</string>
+    <string name="homework_difficulty_medium">中等</string>
+    <string name="homework_difficulty_hard">困难</string>
+    <string name="title_register">注册</string>
+    <string name="toast_clean_cache_finished">已清除</string>
+    <string name="toast_feedback_suggestion_empty">您还没有填写意见哦</string>
+    <string name="toast_feedback_number_invalid">您的号码不符合规范</string>
+    <string name="toast_feedback_word_number_limit">请不要超过500字</string>
+    <string name="toast_feedback_commit_success">提交成功</string>
+    <string name="toast_no_more_data">无更多数据</string>
+    <string name="btn_delete">删除</string>
+    <string name="btn_reuse">重新使用</string>
+    <string name="refresh_load_more">正在加载更多的数据</string>
+    <string name="invalid_login_state_to_login">登录状态失效,请重新登录</string>
+    <string name="dialog_msg_nochapter">尚未匹配章节信息\n敬请期待</string>
+    <string name="toast_homework_too_much">太多题目学生会疯的</string>
+    <string name="already_loaded">已经全部加载完毕</string>
+    <string name="toast_textbook_get_failed">教材获取失败，请重试</string>
+    <string name="toast_textbook_empty">还没有教材哦</string>
+    <string name="toast_grade_get_failed">年级获取失败，请重试</string>
+    <string name="toast_grade_data_empty">还没有年级哦</string>
+    <string name="toast_subject_get_failed">科目获取失败，请重试</string>
+    <string name="toast_subject_data_empty">还没有科目哦</string>
+    <string name="toast_education_get_failed">学历获取失败，请重试</string>
+</resources>

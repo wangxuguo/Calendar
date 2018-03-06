@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@drawable/popwin_list_weeks_bg">
+    <!--today_card_bg-->
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="@color/list_item_textcolor_pressed"
+        android:elevation="5dp"
+        android:focusable="true"
+        android:layout_weight="1"
+        android:longClickable="true" />
+
+</LinearLayout>
+

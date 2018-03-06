@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/title_bar"
+        layout="@layout/title_bar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/introduction_version"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="16dp"
+                android:textColor="@color/text_gray_deep"
+                android:textSize="13sp"
+                />
+
+            <ImageView
+                android:id="@+id/iv_icon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/introduction_version"
+                android:src="@mipmap/icon_app"
+                />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:textColor="@color/text_dark"
+                android:textSize="19sp"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:src="@mipmap/slogan"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/company_name"
+                android:textColor="#cccccc"
+                android:textSize="@dimen/text_size_smaller"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:text="@string/company_website"
+                android:textColor="#cccccc"
+                android:textSize="@dimen/text_size_smaller"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <include
+        android:id="@+id/error_layout"
+        layout="@layout/layout_common_error_page"
+        android:visibility="gone"/>
+</LinearLayout>

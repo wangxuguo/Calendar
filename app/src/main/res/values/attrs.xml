@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="day">
+        <attr name="state_current" format="boolean" />
+    </declare-styleable>
+
+    <attr name="calendarViewStyle" format="reference" />
+
+
+    <!-- Styles -->
+    <attr name="styleCaldroidViewLayout" format="reference"/>
+    <attr name="styleCaldroidLeftArrow" format="reference"/>
+    <attr name="styleCaldroidRightArrow" format="reference"/>
+    <attr name="styleCaldroidMonthName" format="reference"/>
+    <attr name="styleCaldroidNormalCell" format="reference"/>
+    <attr name="styleCaldroidSquareCell" format="reference"/>
+    <attr name="styleCaldroidGridView" format="reference"/>
+    <attr name="styleCaldroidWeekdayView" format="reference"/>
+    <!-- Custom states -->
+    <declare-styleable name="DateState">
+        <attr name="state_date_today" format="boolean"/>
+        <attr name="state_date_selected" format="boolean"/>
+        <attr name="state_date_disabled" format="boolean"/>
+        <attr name="state_date_extradata" format="boolean"/>
+        <attr name="state_date_prev_next_month" format="boolean"/>
+    </declare-styleable>
+    <!-- Declare stylable attribute for a cell -->
+    <declare-styleable name="Cell" >
+        <attr name="android:textColor" />
+        <attr name="android:background" />
+    </declare-styleable>
+    <!-- Textview 右上角红点 -->
+    <declare-styleable name="RedTipTextView">
+        <attr name="redTipsVisibility">
+            <enum name="invisible" value="0"></enum>
+            <enum name="visible" value="1"></enum>
+            <enum name="gone" value="2"></enum>
+        </attr>
+        <attr name="showRightBoundDivider">
+            <enum name="show" value="1"></enum>
+            <enum name="unshow" value="0"></enum>
+        </attr>
+    </declare-styleable>
+
+    <attr name="textwidth" format="integer"/>
+    <attr name="typeface">
+        <enum name="normal" value="0"/>
+        <enum name="sans" value="1"/>
+        <enum name="serif" value="2"/>
+        <enum name="monospace" value="3"/>
+    </attr>
+
+    <declare-styleable name="CYTextView">
+        <attr name="textwidth" />
+        <attr name="textSize" format="dimension"/>
+        <attr name="textColor" format="reference|color"/>
+        <attr name="lineSpacingExtra" format="dimension"/>
+        <attr name="typeface" />
+    </declare-styleable>
+</resources>

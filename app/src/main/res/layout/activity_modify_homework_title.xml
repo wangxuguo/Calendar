@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/title_bar"
+        layout="@layout/title_bar"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/hw_et_title"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginRight="13dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/bg_feedback_edittext_normal"
+            android:maxLength="15"
+            android:paddingLeft="20dp"
+            android:singleLine="true"
+            android:textColor="@color/text_gray_deep"
+            android:textCursorDrawable="@null"
+            android:textSize="@dimen/text_size_small"/>
+
+        <include
+            android:id="@+id/loading_layout"
+            layout="@layout/layout_loading"
+            android:visibility="gone"/>
+
+        <include
+            android:id="@+id/error_layout"
+            layout="@layout/layout_common_error_page"
+            android:visibility="gone"/>
+    </RelativeLayout>
+</LinearLayout>

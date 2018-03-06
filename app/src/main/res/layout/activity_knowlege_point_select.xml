@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.oceansky.teacher.activities.CreatHomeworkActivity">
+
+    <include
+        android:id="@+id/title_bar"
+        layout="@layout/title_bar"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/hw_rl_textbook"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edit_item_height"
+            android:layout_marginLeft="13dp"
+            android:layout_marginRight="13dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/selector_rectangle_stroke_card_bg">
+
+            <TextView
+                android:id="@+id/hw_tv_title_textbook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_left_edit_item_name"
+                android:text="@string/knowlege_point_select_textbook"
+                android:textColor="@color/text_gray_light"
+                android:textSize="@dimen/text_size_small"/>
+
+            <ImageView
+                android:id="@+id/arrow3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/margin_right_edit_arrow"
+                android:src="@mipmap/icon_arrow_right_gray"/>
+
+            <TextView
+                android:id="@+id/hw_tv_textbook"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/margin_right_edit_item_content"
+                android:layout_marginRight="@dimen/margin_right_edit_item_content"
+                android:layout_toLeftOf="@id/arrow3"
+                android:layout_toRightOf="@id/hw_tv_title_textbook"
+                android:ellipsize="end"
+                android:gravity="center|right"
+                android:singleLine="true"
+                android:textColor="@color/text_gray_deep"
+                android:textSize="@dimen/text_size_small"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/hw_rl_chapter"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edit_item_height"
+            android:layout_below="@id/hw_rl_textbook"
+            android:layout_marginLeft="13dp"
+            android:layout_marginRight="13dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/selector_rectangle_stroke_card_bg">
+
+            <TextView
+                android:id="@+id/hw_tv_title_chapter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_left_edit_item_name"
+                android:text="@string/knowlege_point_select_chapter"
+                android:textColor="@color/text_gray_light"
+                android:textSize="@dimen/text_size_small"/>
+
+            <ImageView
+                android:id="@+id/arrow4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/margin_right_edit_arrow"
+                android:src="@mipmap/icon_arrow_right_gray"/>
+
+            <TextView
+                android:id="@+id/hw_tv_chapter"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/margin_right_edit_item_content"
+                android:layout_marginRight="@dimen/margin_right_edit_item_content"
+                android:layout_toLeftOf="@id/arrow4"
+                android:layout_toRightOf="@id/hw_tv_title_chapter"
+                android:ellipsize="end"
+                android:gravity="center|right"
+                android:singleLine="true"
+                android:textColor="@color/text_gray_deep"
+                android:textSize="@dimen/text_size_small"/>
+        </RelativeLayout>
+
+        <com.andexert.expandablelayout.library.ExpandableLayoutListView
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/hw_rl_chapter"
+            android:layout_margin="13dp"
+            android:background="@drawable/bg_rectangle_round_corner_stroke_normal"
+            android:divider="@null"
+            android:padding="1dp"
+            android:scrollbars="none"/>
+
+        <include
+            android:id="@+id/error_layout"
+            layout="@layout/layout_common_error_page"
+            android:visibility="gone"/>
+
+        <include
+            android:id="@+id/loading_layout"
+            layout="@layout/layout_loading"
+            android:visibility="gone"/>
+    </RelativeLayout>
+</LinearLayout>

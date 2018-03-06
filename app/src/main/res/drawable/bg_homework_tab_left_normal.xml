@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <corners
+                android:bottomLeftRadius="@dimen/corner_card_view"
+                android:topLeftRadius="@dimen/corner_card_view"/>
+            <solid android:color="@color/base_color_blue"/>
+        </shape>
+    </item>
+
+    <item>
+        <shape
+            android:shape="rectangle">
+            <corners
+                android:bottomLeftRadius="@dimen/corner_card_view"
+                android:topLeftRadius="@dimen/corner_card_view"/>
+            <stroke
+                android:width="0.5dp"
+                android:color="@color/white"/>
+        </shape>
+    </item>
+</layer-list>
+
