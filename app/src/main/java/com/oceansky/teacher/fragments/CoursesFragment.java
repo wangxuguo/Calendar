@@ -15,8 +15,6 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import com.oceansky.teacher.R;
-import com.oceansky.teacher.activities.CourseDetailActivity;
-import com.oceansky.teacher.activities.LoginActivity;
 import com.oceansky.teacher.constant.CaldroidCustomConstant;
 import com.oceansky.teacher.constant.Constants;
 import com.oceansky.teacher.customviews.adapter.TeacherCourseAdapter;
@@ -79,12 +77,12 @@ public class CoursesFragment extends Fragment {
         list = teacherCourseManager.getTeacherCourse(dateTime);
         initViews();
         listView.setOnItemClickListener((parent, view1, position, id) -> {
-            TearcherCourseListItemBean item = list.get(position);
-            LogHelper.d(TAG, "TearcherCourseListItemBean: " + item);
-            Intent intent = new Intent(getActivity(), CourseDetailActivity.class);
-            intent.putExtra(Constants.WEBVIEW_URL, item.getDetail_url());
-            intent.putExtra(Constants.WEBVIEW_TITLE, item.getTitle());
-            startActivity(intent);
+//            TearcherCourseListItemBean item = list.get(position);
+//            LogHelper.d(TAG, "TearcherCourseListItemBean: " + item);
+//            Intent intent = new Intent(getActivity(), CourseDetailActivity.class);
+//            intent.putExtra(Constants.WEBVIEW_URL, item.getDetail_url());
+//            intent.putExtra(Constants.WEBVIEW_TITLE, item.getTitle());
+//            startActivity(intent);
         });
         return view;
     }
@@ -105,8 +103,8 @@ public class CoursesFragment extends Fragment {
             tv.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Intent intent = new Intent(getActivity(), LoginActivity.class);
-                    getActivity().startActivity(intent);
+//                    Intent intent = new Intent(getActivity(), LoginActivity.class);
+//                    getActivity().startActivity(intent);
                 }
             });
 

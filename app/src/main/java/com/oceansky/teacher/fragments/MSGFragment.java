@@ -24,7 +24,6 @@ import com.anupcowkur.reservoir.Reservoir;
 import com.google.gson.reflect.TypeToken;
 import com.ms.square.android.expandabletextview.ExpandableTextView;
 import com.oceansky.teacher.R;
-import com.oceansky.teacher.activities.TokenInvalidDialogActivity;
 import com.oceansky.teacher.adapter.MessageExpandAdapter;
 import com.oceansky.teacher.constant.Constants;
 import com.oceansky.teacher.customviews.MsgCenterBGARefreshViewHolder;
@@ -325,8 +324,8 @@ public class MSGFragment extends BaseLazyFragment implements AdapterView.OnItemC
 
     @Override
     protected void showTokenInvalidDialog() {
-        Intent intent = new Intent(mContext, TokenInvalidDialogActivity.class);
-        startActivity(intent);
+//        Intent intent = new Intent(mContext, TokenInvalidDialogActivity.class);
+//        startActivity(intent);
     }
 
     /**

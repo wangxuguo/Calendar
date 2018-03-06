@@ -13,7 +13,6 @@ import android.text.TextUtils;
 import com.igexin.sdk.PushConsts;
 import com.igexin.sdk.PushManager;
 import com.oceansky.teacher.R;
-import com.oceansky.teacher.activities.PasswordModifiedDialogActivity;
 import com.oceansky.teacher.activities.TabMainActivity;
 import com.oceansky.teacher.constant.Constants;
 import com.oceansky.teacher.utils.LogHelper;
@@ -89,9 +88,9 @@ public class PushReceiver extends BroadcastReceiver {
                                     return;
                                 }
                                 context.sendBroadcast(new Intent(Constants.ACTION_PASSWORD_CHANGED));
-                                Intent TokenInvalidIntent = new Intent(context, PasswordModifiedDialogActivity.class);
-                                TokenInvalidIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_SINGLE_TOP);
-                                context.startActivity(TokenInvalidIntent);
+//                                Intent TokenInvalidIntent = new Intent(context, PasswordModifiedDialogActivity.class);
+//                                TokenInvalidIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_SINGLE_TOP);
+//                                context.startActivity(TokenInvalidIntent);
                                 break;
                             case Constants.EVENT_ORDER:
                                 if (!isLogined) {

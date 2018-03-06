@@ -29,7 +29,7 @@ def revision() {
 
 android {
     compileSdkVersion 23
-    buildToolsVersion "23.0.2"
+    buildToolsVersion '25.0.0'
 
     defaultConfig {
         applicationId "com.oceansky.teacher"
@@ -221,5 +221,5 @@ dependencies {
     compile 'com.yydcdut.sdlv:sdlv:0.5.4@aar'
     compile 'com.hwangjr.rxbus:rxbus:1.0.4'
     compile 'cat.ereza:customactivityoncrash:1.5.0'
-    compile project(':caldroid')
+//    compile project(':caldroid')
 }

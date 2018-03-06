@@ -20,8 +20,6 @@ import android.widget.TextView;
 import com.anupcowkur.reservoir.Reservoir;
 import com.google.gson.reflect.TypeToken;
 import com.oceansky.teacher.R;
-import com.oceansky.teacher.activities.ClassActivity;
-import com.oceansky.teacher.activities.TokenInvalidDialogActivity;
 import com.oceansky.teacher.adapter.ClassListAdapter;
 import com.oceansky.teacher.constant.Constants;
 import com.oceansky.teacher.customviews.RefreshListView;
@@ -188,10 +186,10 @@ public class ClassFragment extends BaseLazyFragment implements RefreshListView.O
         if (item != null) {
             MobclickAgent.onEvent(mContext, "jhyx_tap_class_name");
             int classId = item.getId();
-            Intent intent = new Intent(mContext, ClassActivity.class);
-            intent.putExtra(Constants.CLASS_ID, classId);
-            intent.putExtra(Constants.CLASS_TITL, item.getTitle());
-            startActivity(intent);
+//            Intent intent = new Intent(mContext, ClassActivity.class);
+//            intent.putExtra(Constants.CLASS_ID, classId);
+//            intent.putExtra(Constants.CLASS_TITL, item.getTitle());
+//            startActivity(intent);
         }
     }
 
@@ -234,7 +232,7 @@ public class ClassFragment extends BaseLazyFragment implements RefreshListView.O
         protected void handleError(Throwable e) {
             switch (e.getMessage()) {
                 case "4013":
-                    startActivity(new Intent(mContext, TokenInvalidDialogActivity.class));
+//                    startActivity(new Intent(mContext, TokenInvalidDialogActivity.class));
                     refreshLoadingState(Constants.LOADING_STATE_FAIL, true);
                     break;
                 default:

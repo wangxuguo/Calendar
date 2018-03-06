@@ -36,7 +36,7 @@ public class WelcomeActivity extends FragmentActivity {
         mHandler.postDelayed(new Runnable() {
             @Override
             public void run() {
-                startActivity(new Intent(WelcomeActivity.this, GuideActivity.class));
+                startActivity(new Intent(WelcomeActivity.this, TabMainActivity.class));
                 finish();
             }
         }, 2000);

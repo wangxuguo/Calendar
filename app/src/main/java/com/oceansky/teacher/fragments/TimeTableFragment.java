@@ -29,8 +29,6 @@ import android.widget.Toast;
 
 import com.anupcowkur.reservoir.Reservoir;
 import com.oceansky.teacher.R;
-import com.oceansky.teacher.activities.LoginActivity;
-import com.oceansky.teacher.activities.MsgExpandCenterActivity;
 import com.oceansky.teacher.adapter.PickWeekAdapter;
 import com.oceansky.teacher.constant.Constants;
 import com.oceansky.teacher.customviews.CoursesViewpager;
@@ -386,18 +384,18 @@ public class TimeTableFragment extends BaseLazyFragment implements View.OnClickL
             case R.id.iv_msgcenter://msg
                 MobclickAgent.onEvent(getContext(), "jhyx_tap_schedule_bell");
                 if (TextUtils.isEmpty(SecurePreferences.getInstance(getActivity(), false).getString(Constants.KEY_ACCESS_TOKEN))) {
-                    Intent intent = new Intent(getActivity(), LoginActivity.class);
-                    intent.putExtra(Constants.REQUEST_CODE, Constants.REQUEST_MSG);
-                    startActivity(intent);
+//                    Intent intent = new Intent(getActivity(), LoginActivity.class);
+//                    intent.putExtra(Constants.REQUEST_CODE, Constants.REQUEST_MSG);
+//                    startActivity(intent);
                 } else {
-                    Intent msgIntent = new Intent(getActivity(), MsgExpandCenterActivity.class);
-                    if (msgIntent != null) {
-                        msgIntent.putExtra(Constants.PUSH_EVENT, mPushEvent);
-                        mPushEvent = null;
-                    }
-                    msgIntent.putExtra(Constants.COMMON_MSG_SUM, mPub);
-                    msgIntent.putExtra(Constants.PRI_MSG_SUM, mPri);
-                    startActivity(msgIntent);
+//                    Intent msgIntent = new Intent(getActivity(), MsgExpandCenterActivity.class);
+//                    if (msgIntent != null) {
+//                        msgIntent.putExtra(Constants.PUSH_EVENT, mPushEvent);
+//                        mPushEvent = null;
+//                    }
+//                    msgIntent.putExtra(Constants.COMMON_MSG_SUM, mPub);
+//                    msgIntent.putExtra(Constants.PRI_MSG_SUM, mPri);
+//                    startActivity(msgIntent);
                 }
                 break;
             case R.id.btn_month_week://周月转换

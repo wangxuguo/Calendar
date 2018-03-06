@@ -23,14 +23,10 @@ import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
 import com.nostra13.universalimageloader.core.assist.QueueProcessingType;
 import com.nostra13.universalimageloader.core.download.BaseImageDownloader;
-import com.oceansky.teacher.activities.CustomErrorActivity;
 import com.oceansky.teacher.constant.Constants;
 import com.oceansky.teacher.constant.FeatureConfig;
 import com.oceansky.teacher.customviews.photoSelector.listener.UILPauseOnScrollListener;
 import com.oceansky.teacher.customviews.photoSelector.loader.UILImageLoader;
-import com.oceansky.teacher.processProtection.Receiver1;
-import com.oceansky.teacher.processProtection.Receiver2;
-import com.oceansky.teacher.processProtection.Service2;
 import com.oceansky.teacher.utils.LogHelper;
 import com.umeng.analytics.MobclickAgent;
 
@@ -67,7 +63,7 @@ public class AndroidApplication extends MultiDexApplication {
         mActivityStack = new Stack<>();
 
         CustomActivityOnCrash.install(this);
-        CustomActivityOnCrash.setErrorActivityClass(CustomErrorActivity.class);
+//        CustomActivityOnCrash.setErrorActivityClass(CustomErrorActivity.class);
 
         // enable logging
         // enable stetho
@@ -283,38 +279,38 @@ public class AndroidApplication extends MultiDexApplication {
     @Override
     protected void attachBaseContext(Context base) {
         super.attachBaseContext(base);
-        mDaemonClient = new DaemonClient(createDaemonConfigurations());
-        mDaemonClient.onAttachBaseContext(base);
+//        mDaemonClient = new DaemonClient(createDaemonConfigurations());
+//        mDaemonClient.onAttachBaseContext(base);
     }
 
-    protected DaemonConfigurations createDaemonConfigurations() {
-        DaemonConfigurations.DaemonConfiguration configuration1 = new DaemonConfigurations.DaemonConfiguration(
-                "com.oceansky.teacher:pushservice",
-                PushService.class.getCanonicalName(),
-                Receiver1.class.getCanonicalName());
+//    protected DaemonConfigurations createDaemonConfigurations() {
+//        DaemonConfigurations.DaemonConfiguration configuration1 = new DaemonConfigurations.DaemonConfiguration(
+//                "com.oceansky.teacher:pushservice",
+//                PushService.class.getCanonicalName(),
+//                Receiver1.class.getCanonicalName());
+//
+//        DaemonConfigurations.DaemonConfiguration configuration2 = new DaemonConfigurations.DaemonConfiguration(
+//                "com.oceansky.teacher:process2",
+//                Service2.class.getCanonicalName(),
+//                Receiver2.class.getCanonicalName());
+//
+//        DaemonConfigurations.DaemonListener listener = new MyDaemonListener();
+//        //return new DaemonConfigurations(configuration1, configuration2);//listener can be null
+//        return new DaemonConfigurations(configuration1, configuration2, listener);
+//    }
 
-        DaemonConfigurations.DaemonConfiguration configuration2 = new DaemonConfigurations.DaemonConfiguration(
-                "com.oceansky.teacher:process2",
-                Service2.class.getCanonicalName(),
-                Receiver2.class.getCanonicalName());
 
-        DaemonConfigurations.DaemonListener listener = new MyDaemonListener();
-        //return new DaemonConfigurations(configuration1, configuration2);//listener can be null
-        return new DaemonConfigurations(configuration1, configuration2, listener);
-    }
-
-
-    class MyDaemonListener implements DaemonConfigurations.DaemonListener {
-        @Override
-        public void onPersistentStart(Context context) {
-        }
-
-        @Override
-        public void onDaemonAssistantStart(Context context) {
-        }
-
-        @Override
-        public void onWatchDaemonDaed() {
-        }
-    }
+//    class MyDaemonListener implements DaemonConfigurations.DaemonListener {
+//        @Override
+//        public void onPersistentStart(Context context) {
+//        }
+//
+//        @Override
+//        public void onDaemonAssistantStart(Context context) {
+//        }
+//
+//        @Override
+//        public void onWatchDaemonDaed() {
+//        }
+//    }
 }

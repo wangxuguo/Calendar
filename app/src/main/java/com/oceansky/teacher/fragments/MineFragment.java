@@ -20,16 +20,6 @@ import com.anupcowkur.reservoir.Reservoir;
 import com.igexin.sdk.PushManager;
 import com.oceansky.teacher.BuildConfig;
 import com.oceansky.teacher.R;
-import com.oceansky.teacher.activities.BaseWebViewActivity;
-import com.oceansky.teacher.activities.ClassListActivity;
-import com.oceansky.teacher.activities.CourseActivity;
-import com.oceansky.teacher.activities.EditActivity;
-import com.oceansky.teacher.activities.HomeworkActivity;
-import com.oceansky.teacher.activities.LoginActivity;
-import com.oceansky.teacher.activities.MsgExpandCenterActivity;
-import com.oceansky.teacher.activities.OrdersActivity;
-import com.oceansky.teacher.activities.SettingActivity;
-import com.oceansky.teacher.activities.TokenInvalidDialogActivity;
 import com.oceansky.teacher.constant.Constants;
 import com.oceansky.teacher.constant.FeatureConfig;
 import com.oceansky.teacher.customviews.BGAJHYXRefreshViewHolder;
@@ -260,44 +250,44 @@ public class MineFragment extends BaseLazyFragment implements View.OnClickListen
                     break;
                 case R.id.profile_rl_course:
                     MobclickAgent.onEvent(mContext, "jhyx_tap_mine_course");
-                    startActivity(new Intent(mContext, CourseActivity.class));
+//                    startActivity(new Intent(mContext, CourseActivity.class));
                     break;
                 case R.id.profile_rl_order:
                     MobclickAgent.onEvent(mContext, "jhyx_tap_mine_order");
-                    startActivity(new Intent(mContext, OrdersActivity.class));
+//                    startActivity(new Intent(mContext, OrdersActivity.class));
                     break;
                 case R.id.profile_rl_msg:
                     MobclickAgent.onEvent(mContext, "jhyx_tap_mine_message");
-                    Intent intent1 = new Intent(mContext, MsgExpandCenterActivity.class);
+//                    Intent intent1 = new Intent(mContext, MsgExpandCenterActivity.class);
                     //                    Intent intent1 = new Intent(mContext, MsgCenterActivity.class);
-                    intent1.putExtra(Constants.COMMON_MSG_SUM, mPub);
-                    intent1.putExtra(Constants.PRI_MSG_SUM, mPri);
-                    startActivity(intent1);
+//                    intent1.putExtra(Constants.COMMON_MSG_SUM, mPub);
+//                    intent1.putExtra(Constants.PRI_MSG_SUM, mPri);
+//                    startActivity(intent1);
                     break;
                 case R.id.profile_rl_class:
                     MobclickAgent.onEvent(mContext, "jhyx_tap_mine_class");
-                    startActivity(new Intent(mContext, ClassListActivity.class));
+//                    startActivity(new Intent(mContext, ClassListActivity.class));
                     break;
                 case R.id.profile_rl_homework:
                     // TODO: 16/8/9 统计事件
                     MobclickAgent.onEvent(mContext, Constants.MINE_HOMEWORK);
-                    startActivity(new Intent(mContext, HomeworkActivity.class));
+//                    startActivity(new Intent(mContext, HomeworkActivity.class));
                     break;
                 case R.id.profile_rl_setting:
                     MobclickAgent.onEvent(mContext, "jhyx_tap_mine_setting");
-                    Intent intent = new Intent(mContext, SettingActivity.class);
-                    startActivityForResult(intent, REQUEST_SETTING);
+//                    Intent intent = new Intent(mContext, SettingActivity.class);
+//                    startActivityForResult(intent, REQUEST_SETTING);
                     break;
                 case R.id.back:
                     MobclickAgent.onEvent(mContext, "jhyx_tap_mine_homepage");
                     int teacherStatus = SharePreferenceUtils.getIntPref(mContext, Constants.TEACHER_STATUS, 0);
                     if (teacherStatus == Constants.TEACHER_STATE_PASS) {
-                        Intent mineIntent = new Intent(mContext, BaseWebViewActivity.class);
-                        final String teacher_uid = SecurePreferences.getInstance(mContext, true).getString(Constants.KEY_TEACHER_ID);
-                        mineIntent.putExtra(Constants.WEBVIEW_URL, Constants.TEACHER_BASE_URL + "/" + teacher_uid + "/homepage");
-                        mineIntent.putExtra(Constants.WEBVIEW_TITLE, "教师详情");
-                        mineIntent.putExtra(Constants.WEBVIEW_BUTTON, "我的");
-                        startActivityForResult(mineIntent, REQUEST_MINE);
+//                        Intent mineIntent = new Intent(mContext, BaseWebViewActivity.class);
+//                        final String teacher_uid = SecurePreferences.getInstance(mContext, true).getString(Constants.KEY_TEACHER_ID);
+//                        mineIntent.putExtra(Constants.WEBVIEW_URL, Constants.TEACHER_BASE_URL + "/" + teacher_uid + "/homepage");
+//                        mineIntent.putExtra(Constants.WEBVIEW_TITLE, "教师详情");
+//                        mineIntent.putExtra(Constants.WEBVIEW_BUTTON, "我的");
+//                        startActivityForResult(mineIntent, REQUEST_MINE);
                         LogHelper.d(TAG, "homepage");
                     } else {
                         gotoEditActivity();
@@ -312,24 +302,24 @@ public class MineFragment extends BaseLazyFragment implements View.OnClickListen
             switch (v.getId()) {
                 case R.id.profile_rl_setting:
                     MobclickAgent.onEvent(mContext, "jhyx_tap_mine_setting");
-                    Intent intent = new Intent(mContext, SettingActivity.class);
-                    startActivity(intent);
+//                    Intent intent = new Intent(mContext, SettingActivity.class);
+//                    startActivity(intent);
                     break;
                 case R.id.profile_rl_msg:
                     MobclickAgent.onEvent(mContext, "jhyx_tap_mine_message");
-                    Intent intent1 = new Intent(mContext, LoginActivity.class);
-                    intent1.putExtra(Constants.REQUEST_CODE, Constants.REQUEST_MSG);
-                    startActivity(intent1);
+//                    Intent intent1 = new Intent(mContext, LoginActivity.class);
+//                    intent1.putExtra(Constants.REQUEST_CODE, Constants.REQUEST_MSG);
+//                    startActivity(intent1);
                     break;
                 default:
-                    startActivity(new Intent(mContext, LoginActivity.class));
+//                    startActivity(new Intent(mContext, LoginActivity.class));
             }
         }
     }
 
     private void gotoEditActivity() {
-        Intent editIntent = new Intent(mContext, EditActivity.class);
-        startActivityForResult(editIntent, REQUESR_TEACHER_PROFILE);
+//        Intent editIntent = new Intent(mContext, EditActivity.class);
+//        startActivityForResult(editIntent, REQUESR_TEACHER_PROFILE);
     }
 
     /**
@@ -399,7 +389,7 @@ public class MineFragment extends BaseLazyFragment implements View.OnClickListen
         protected void handleError(Throwable e) {
             switch (e.getMessage()) {
                 case ApiException.TOKEN_INVALID:
-                    startActivity(new Intent(mContext, TokenInvalidDialogActivity.class));
+//                    startActivity(new Intent(mContext, TokenInvalidDialogActivity.class));
                     break;
                 default:
                     refreshLoadingState(Constants.LOADING_STATE_FAIL, false);
@@ -522,7 +512,7 @@ public class MineFragment extends BaseLazyFragment implements View.OnClickListen
                 case REQUEST_SETTING:
                     //修改密码成功后返回
                     loginOut();
-                    startActivity(new Intent(mContext, LoginActivity.class));
+//                    startActivity(new Intent(mContext, LoginActivity.class));
                     break;
             }
         } else if (resultCode == Activity.RESULT_FIRST_USER) {

@@ -114,9 +114,9 @@ public abstract class BaseActivity extends FragmentActivity implements BackStack
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 dialog.dismiss();
-                Intent intent = new Intent(BaseActivity.this, LoginActivity.class);
-                intent.putExtra(Constants.CLASS_NAME, simpleName);
-                startActivity(intent);
+//                Intent intent = new Intent(BaseActivity.this, LoginActivity.class);
+//                intent.putExtra(Constants.CLASS_NAME, simpleName);
+//                startActivity(intent);
             }
         });
         ibuilder.setNegativeButton(R.string.btn_cancel, new DialogInterface.OnClickListener() {

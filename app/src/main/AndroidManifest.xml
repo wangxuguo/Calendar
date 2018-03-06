@@ -55,111 +55,9 @@
         <activity
             android:name=".activities.TabMainActivity"
             android:screenOrientation="portrait"/>
-        <activity
-            android:name=".activities.LoginActivity"
-            android:launchMode="singleTask"
-            android:screenOrientation="portrait"/>
-        <activity
-            android:name=".activities.RegisterActivity"
-            android:screenOrientation="portrait"/>
-        <activity
-            android:name=".activities.ForgetPwdActivity"
-            android:screenOrientation="portrait"/>
-        <activity
-            android:name=".activities.EditActivity"
-            android:screenOrientation="portrait"
-            android:windowSoftInputMode="adjustResize|stateHidden"/>
-        <activity
-            android:name=".activities.SettingActivity"
-            android:screenOrientation="portrait"/>
-        <activity
-            android:name=".activities.IntroductionActivity"
-            android:screenOrientation="portrait"/>
-        <activity
-            android:name=".activities.CourseActivity"
-            android:screenOrientation="portrait"/>
-        <activity
-            android:name=".activities.ClassActivity"
-            android:screenOrientation="portrait"/>
-        <activity
-            android:name=".activities.HomeworkActivity"
-            android:screenOrientation="portrait"/>
-        <activity
-            android:name=".activities.SettingFeedbackActivity"
-            android:screenOrientation="portrait"/>
-        <activity
-            android:name=".activities.ResetPasswordActivity"
-            android:screenOrientation="portrait"/>
-        <activity
-            android:name=".activities.OrdersActivity"
-            android:screenOrientation="portrait"/>
-        <activity
-            android:name=".activities.BaseWebViewActivity"
-            android:screenOrientation="portrait"/>
-        <activity
-            android:name=".activities.MsgExpandCenterActivity"
-            android:screenOrientation="portrait"/>
-        <activity
-            android:name=".activities.GuideActivity"
-            android:screenOrientation="portrait"/>
-        <activity
-            android:name=".activities.PasswordModifiedDialogActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/DialogStyle"/>
-        <activity
-            android:name=".activities.TokenInvalidDialogActivity"
-            android:launchMode="singleInstance"
-            android:screenOrientation="portrait"
-            android:theme="@style/DialogStyle"/>
-        <activity
-            android:name=".activities.ClassListActivity"
-            android:screenOrientation="portrait"/>
-        <activity
-            android:name=".activities.CreatHomeworkActivity"
-            android:screenOrientation="portrait"/>
-        <activity
-            android:name=".activities.KnowledgePointSelectActivity"
-            android:launchMode="singleTop"
-            android:screenOrientation="portrait"
-            android:theme="@style/translucentActivity"/>
-        <activity
-            android:name=".activities.PreviewNetDataActivity"
-            android:screenOrientation="portrait"/>
-        <activity
-            android:name=".activities.PreviewLocalDataActivity"
-            android:screenOrientation="portrait"/>
-        <activity
-            android:name=".activities.AssignHomeworkActivity"
-            android:screenOrientation="portrait"/>
-        <activity
-            android:name=".activities.HomeworkSelectActivity"
-            android:screenOrientation="portrait"/>
-        <activity
-            android:name=".activities.HomeWorkReportActivity"
-            android:screenOrientation="portrait"/>
-        <activity
-            android:name=".activities.CustomErrorActivity"
-            android:process=":error_activity"/>
-        <activity
-            android:name=".activities.CourseDetailActivity"
-            android:screenOrientation="portrait"/>
-        <activity
-            android:name=".activities.TeacherDetailActivity"
-            android:screenOrientation="portrait"/>
-        <activity
-            android:name=".activities.ModifyHomeworkTitleActivity"
-            android:screenOrientation="portrait"/>
-        <activity
-            android:name=".activities.NormalWebViewActivity"
-            android:screenOrientation="portrait"/>
+
 
         <!-- letv start -->
-        <activity
-            android:name=".activities.PlayActivity"
-            android:configChanges="keyboard|screenSize|orientation|layoutDirection"
-            android:label="@string/app_name"
-            android:screenOrientation="landscape"
-            android:theme="@android:style/Theme.NoTitleBar"/>
 
         <service
             android:name="com.letv.pp.service.CdeService"
@@ -183,17 +81,6 @@
             android:label="NotificationCenter"
             android:process=":pushservice"/>
 
-        <receiver
-            android:name=".processProtection.Receiver1"
-            android:process=":pushservice"/>
-
-        <service
-            android:name=".processProtection.Service2"
-            android:process=":process2"/>
-
-        <receiver
-            android:name=".processProtection.Receiver2"
-            android:process=":process2"/>
 
         <service
             android:name="com.igexin.sdk.PushServiceUser"

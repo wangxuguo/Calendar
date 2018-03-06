@@ -1,4 +1,4 @@
-package com.roomorama.caldroid;
+package com.oceansky.teacher.adapter;
 
 import android.content.Context;
 import android.view.ContextThemeWrapper;
@@ -8,7 +8,8 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
-import com.caldroid.R;
+
+import com.oceansky.teacher.R;
 
 import java.util.List;
 

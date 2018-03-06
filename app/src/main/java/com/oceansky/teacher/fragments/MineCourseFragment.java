@@ -18,7 +18,6 @@ import com.anupcowkur.reservoir.Reservoir;
 import com.google.gson.reflect.TypeToken;
 import com.hwangjr.rxbus.annotation.Subscribe;
 import com.oceansky.teacher.R;
-import com.oceansky.teacher.activities.CourseDetailActivity;
 import com.oceansky.teacher.adapter.CourseAdapter;
 import com.oceansky.teacher.constant.Constants;
 import com.oceansky.teacher.customviews.BGAJHYXRefreshViewHolder;
@@ -236,10 +235,10 @@ public class MineCourseFragment extends BaseLazyFragment implements BGARefreshLa
         }
         CourseBeanForAdapter courseBean = mCourseDatas.get(position);
         String detailUrl = courseBean.getDetailUrl();
-        Intent intent = new Intent(mContext, CourseDetailActivity.class);
-        intent.putExtra(Constants.WEBVIEW_URL, detailUrl);
-        intent.putExtra(Constants.WEBVIEW_TITLE, courseBean.getTitle());
-        startActivity(intent);
+//        Intent intent = new Intent(mContext, CourseDetailActivity.class);
+//        intent.putExtra(Constants.WEBVIEW_URL, detailUrl);
+//        intent.putExtra(Constants.WEBVIEW_TITLE, courseBean.getTitle());
+//        startActivity(intent);
     }
 
     private class GetAllCoursesSubscriber extends LoadingSubscriber<CourseEntity> {

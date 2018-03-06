@@ -165,19 +165,19 @@ public class TabMainActivity extends BaseActivityWithLoadingState {
         switch (mPushEvent) {
             case Constants.EVENT_ORDER:
                 mIndicatorViewPager.setCurrentItem(TAB_MINE, false);
-                if (isLogined) {
-                    startActivity(new Intent(this, OrdersActivity.class));
-                } else {
-                    startActivity(new Intent(this, LoginActivity.class));
-                }
+//                if (isLogined) {
+//                    startActivity(new Intent(this, OrdersActivity.class));
+//                } else {
+//                    startActivity(new Intent(this, LoginActivity.class));
+//                }
                 break;
             case Constants.EVENT_COURSE:
                 mIndicatorViewPager.setCurrentItem(TAB_MINE, false);
-                if (isLogined) {
-                    startActivity(new Intent(this, CourseActivity.class));
-                } else {
-                    startActivity(new Intent(this, LoginActivity.class));
-                }
+//                if (isLogined) {
+//                    startActivity(new Intent(this, CourseActivity.class));
+//                } else {
+//                    startActivity(new Intent(this, LoginActivity.class));
+//                }
                 break;
             case Constants.EVENT_MSG_NOTIFY_BEGIN:
             case Constants.EVENT_MSG_COURSE_DELAY:
@@ -188,9 +188,9 @@ public class TabMainActivity extends BaseActivityWithLoadingState {
                 if (isLogined) {
                     gotoMsgCenter();
                 } else {
-                    Intent intent = new Intent(this, LoginActivity.class);
-                    intent.putExtra(Constants.REQUEST_CODE, Constants.REQUEST_MSG);
-                    startActivity(intent);
+//                    Intent intent = new Intent(this, LoginActivity.class);
+//                    intent.putExtra(Constants.REQUEST_CODE, Constants.REQUEST_MSG);
+//                    startActivity(intent);
                 }
                 break;
             case Constants.EVENT_MSG_OPERATION:
@@ -199,20 +199,20 @@ public class TabMainActivity extends BaseActivityWithLoadingState {
                 if (isLogined) {
                     gotoMsgCenter();
                 } else {
-                    Intent intent = new Intent(this, LoginActivity.class);
-                    intent.putExtra(Constants.REQUEST_CODE, Constants.REQUEST_MSG);
-                    startActivity(intent);
+//                    Intent intent = new Intent(this, LoginActivity.class);
+//                    intent.putExtra(Constants.REQUEST_CODE, Constants.REQUEST_MSG);
+//                    startActivity(intent);
                 }
                 break;
             case Constants.EVENT_MSG_HWREPORT:
                 mIndicatorViewPager.setCurrentItem(TAB_MINE, false);
                 String push_data = getIntent().getStringExtra(Constants.PUSH_DATA);
                 if (isLogined) {
-                    gotoHomeWorkReport(push_data);
+//                    gotoHomeWorkReport(push_data);
                 } else {
-                    Intent intent = new Intent(this, LoginActivity.class);
-                    intent.putExtra(Constants.REQUEST_CODE, Constants.REQUEST_MSG);
-                    startActivity(intent);
+//                    Intent intent = new Intent(this, LoginActivity.class);
+//                    intent.putExtra(Constants.REQUEST_CODE, Constants.REQUEST_MSG);
+//                    startActivity(intent);
                 }
                 break;
         }
@@ -325,29 +325,29 @@ public class TabMainActivity extends BaseActivityWithLoadingState {
     }
 
     // 需要先跳转到作业列表 ---已完成作业列表
-    private void gotoHomeWorkReport(String data) {
-        Intent blessingIntent = new Intent(this, HomeworkActivity.class);
-        try {
-            JSONObject jsonObject = new JSONObject(data);
-            int homework_id = jsonObject.getInt(Constants.HOMEWORK_ID);
-            int course_id = jsonObject.getInt(Constants.COURSE_ID);
-            String title = jsonObject.getString(Constants.WEBVIEW_TITLE);
-            blessingIntent.putExtra(Constants.HOMEWORK_ID, homework_id);
-            blessingIntent.putExtra(Constants.COURSE_ID, course_id);
-            blessingIntent.putExtra(Constants.WEBVIEW_TITLE, title + getString(R.string.homework_report));
-            LogHelper.d(TAG, "gotoHomeWorkReport  homework_id: " + homework_id + "  course_id: " + course_id + title);
-        } catch (JSONException e) {
-            e.printStackTrace();
-        }
-        blessingIntent.putExtra(Constants.PUSH_DATA, data);
-        blessingIntent.putExtra(Constants.PUSH_EVENT, mPushEvent);
-        startActivity(blessingIntent);
-    }
+//    private void gotoHomeWorkReport(String data) {
+//        Intent blessingIntent = new Intent(this, HomeworkActivity.class);
+//        try {
+//            JSONObject jsonObject = new JSONObject(data);
+//            int homework_id = jsonObject.getInt(Constants.HOMEWORK_ID);
+//            int course_id = jsonObject.getInt(Constants.COURSE_ID);
+//            String title = jsonObject.getString(Constants.WEBVIEW_TITLE);
+//            blessingIntent.putExtra(Constants.HOMEWORK_ID, homework_id);
+//            blessingIntent.putExtra(Constants.COURSE_ID, course_id);
+//            blessingIntent.putExtra(Constants.WEBVIEW_TITLE, title + getString(R.string.homework_report));
+//            LogHelper.d(TAG, "gotoHomeWorkReport  homework_id: " + homework_id + "  course_id: " + course_id + title);
+//        } catch (JSONException e) {
+//            e.printStackTrace();
+//        }
+//        blessingIntent.putExtra(Constants.PUSH_DATA, data);
+//        blessingIntent.putExtra(Constants.PUSH_EVENT, mPushEvent);
+//        startActivity(blessingIntent);
+//    }
 
     private void gotoMsgCenter() {
-        Intent blessingIntent = new Intent(this, MsgExpandCenterActivity.class);
-        blessingIntent.putExtra(Constants.PUSH_EVENT, mPushEvent);
-        startActivity(blessingIntent);
+//        Intent blessingIntent = new Intent(this, MsgExpandCenterActivity.class);
+//        blessingIntent.putExtra(Constants.PUSH_EVENT, mPushEvent);
+//        startActivity(blessingIntent);
     }
 
     @Override

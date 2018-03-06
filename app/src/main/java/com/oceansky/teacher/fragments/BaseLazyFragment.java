@@ -12,7 +12,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.oceansky.teacher.R;
-import com.oceansky.teacher.activities.LoginActivity;
 import com.oceansky.teacher.constant.Constants;
 import com.oceansky.teacher.customviews.CustomDialog;
 import com.oceansky.teacher.utils.LogHelper;
@@ -100,7 +99,7 @@ public abstract class BaseLazyFragment extends LazyFragment {
                 mErrorDesc.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        startActivity(new Intent(getActivity(), LoginActivity.class));
+//                        startActivity(new Intent(getActivity(), LoginActivity.class));
                     }
                 });
                 break;
@@ -123,9 +122,9 @@ public abstract class BaseLazyFragment extends LazyFragment {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 dialog.dismiss();
-                Intent intent = new Intent(getActivity(), LoginActivity.class);
-                intent.putExtra(Constants.CLASS_NAME,simpleName);
-                startActivity(intent);
+//                Intent intent = new Intent(getActivity(), LoginActivity.class);
+//                intent.putExtra(Constants.CLASS_NAME,simpleName);
+//                startActivity(intent);
             }
         });
         ibuilder.setNegativeButton(R.string.btn_cancel, new DialogInterface.OnClickListener() {
