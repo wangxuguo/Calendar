@@ -164,7 +164,6 @@ android {
 
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
-    compile project(':playerskin')
     //EventBus事件传递
     compile 'org.greenrobot:eventbus:3.0.0'
     testCompile 'junit:junit:4.12'
@@ -212,9 +211,9 @@ dependencies {
     //缓存
     compile 'com.anupcowkur:reservoir:2.1'
     compile 'com.android.support:multidex:1.0.0'
-    compile project(path: ':LibMarsdaemon')
-    compile project(':ExpandableLayout')
-    compile project(':libExpandTextView')
+//    compile project(path: ':LibMarsdaemon')
+//    compile project(':ExpandableLayout')
+//    compile project(':libExpandTextView')
     //tablayout
     compile 'com.flyco.tablayout:FlycoTabLayout_Lib:2.0.8@aar'
     //listview左划功能按钮

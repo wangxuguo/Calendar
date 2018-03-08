@@ -13,7 +13,6 @@ import android.text.TextUtils;
 
 import com.anupcowkur.reservoir.Reservoir;
 import com.facebook.stetho.Stetho;
-import com.marswin89.marsdaemon.DaemonClient;
 import com.nostra13.universalimageloader.cache.disc.naming.HashCodeFileNameGenerator;
 import com.nostra13.universalimageloader.cache.memory.impl.LruMemoryCache;
 import com.nostra13.universalimageloader.core.DisplayImageOptions;
@@ -51,7 +50,7 @@ public class AndroidApplication extends MultiDexApplication {
     public static  boolean            isLogined;
     private static AndroidApplication mInstance;
     private        Stack<Activity>    mActivityStack;
-    private        DaemonClient       mDaemonClient;
+//    private        DaemonClient       mDaemonClient;
 
     @Override
     public void onCreate() {
