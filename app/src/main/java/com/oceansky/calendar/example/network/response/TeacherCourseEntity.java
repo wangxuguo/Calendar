@@ -1,4 +1,4 @@
-package com.oceansky.example.network.response;
+package com.oceansky.calendar.example.network.response;
 
 import java.io.Serializable;
 import java.util.List;

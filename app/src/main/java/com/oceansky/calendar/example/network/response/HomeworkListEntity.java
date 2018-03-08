@@ -1,7 +1,7 @@
-package com.oceansky.example.network.response;
+package com.oceansky.calendar.example.network.response;
 
 import com.google.gson.annotations.SerializedName;
-import com.oceansky.example.utils.MyHashSet;
+import com.oceansky.calendar.example.utils.MyHashSet;
 
 import java.io.Serializable;
 import java.util.ArrayList;

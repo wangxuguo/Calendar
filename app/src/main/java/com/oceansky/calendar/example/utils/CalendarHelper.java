@@ -1,7 +1,7 @@
-package com.oceansky.example.utils;
+package com.oceansky.calendar.example.utils;
 
 
-import com.oceansky.example.constant.CaldroidCustomConstant;
+import com.oceansky.calendar.example.constant.CaldroidCustomConstant;
 
 import org.joda.time.DateTime;
 

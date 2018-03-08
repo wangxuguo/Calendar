@@ -9,7 +9,7 @@
     android:padding="0dp"
     >
 
-    <com.oceansky.teacher.customviews.CellView
+    <com.oceansky.calendar.example.customviews.CellView
         android:id="@+id/calendar_tv"
         style="?styleCaldroidNormalCell"
         android:layout_width="30dp"

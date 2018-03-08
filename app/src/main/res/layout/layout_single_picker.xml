@@ -43,7 +43,7 @@
                 android:textSize="15sp"/>
         </RelativeLayout>
 
-        <com.oceansky.teacher.customviews.pickerview.LoopView
+        <com.oceansky.calendar.example.customviews.pickerview.LoopView
             android:id="@+id/picker_single"
             android:layout_width="match_parent"
             android:layout_height="180dp"

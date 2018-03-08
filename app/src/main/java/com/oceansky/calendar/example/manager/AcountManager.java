@@ -1,14 +1,14 @@
-package com.oceansky.example.manager;
+package com.oceansky.calendar.example.manager;
 
 import android.content.Context;
 import android.text.TextUtils;
 
-import com.oceansky.example.constant.Constants;
-import com.oceansky.example.network.response.RegisterEntity;
-import com.oceansky.example.network.response.LoginEntity;
-import com.oceansky.example.utils.LogHelper;
-import com.oceansky.example.utils.SecurePreferences;
-import com.oceansky.example.utils.SharePreferenceUtils;
+import com.oceansky.calendar.example.constant.Constants;
+import com.oceansky.calendar.example.network.response.RegisterEntity;
+import com.oceansky.calendar.example.network.response.LoginEntity;
+import com.oceansky.calendar.example.utils.LogHelper;
+import com.oceansky.calendar.example.utils.SecurePreferences;
+import com.oceansky.calendar.example.utils.SharePreferenceUtils;
 import com.umeng.analytics.MobclickAgent;
 
 /**

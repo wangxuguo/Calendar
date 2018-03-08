@@ -1,4 +1,4 @@
-package com.oceansky.example.utils;
+package com.oceansky.calendar.example.utils;
 
 import android.os.Bundle;
 

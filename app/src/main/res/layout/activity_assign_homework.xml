@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.oceansky.teacher.activities.AssignHomeworkActivity">
+    tools:context="com.oceansky.example.activities.AssignHomeworkActivity">
 
     <include
         android:id="@+id/title_bar"

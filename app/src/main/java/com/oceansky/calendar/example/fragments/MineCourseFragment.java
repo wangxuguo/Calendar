@@ -1,4 +1,4 @@
-package com.oceansky.example.fragments;
+package com.oceansky.calendar.example.fragments;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -17,21 +17,21 @@ import android.widget.TextView;
 import com.anupcowkur.reservoir.Reservoir;
 import com.google.gson.reflect.TypeToken;
 import com.hwangjr.rxbus.annotation.Subscribe;
-import com.oceansky.example.R;
-import com.oceansky.example.adapter.CourseAdapter;
-import com.oceansky.example.constant.Constants;
-import com.oceansky.example.customviews.BGAJHYXRefreshViewHolder;
-import com.oceansky.example.customviews.CustomListView;
-import com.oceansky.example.entity.CourseBeanForAdapter;
-import com.oceansky.example.event.LoginSuccessEvent;
-import com.oceansky.example.event.RxBus;
-import com.oceansky.example.network.http.ApiException;
-import com.oceansky.example.network.http.HttpManager;
-import com.oceansky.example.network.response.CourseEntity;
-import com.oceansky.example.network.subscribers.LoadingSubscriber;
-import com.oceansky.example.utils.LogHelper;
-import com.oceansky.example.utils.NetworkUtils;
-import com.oceansky.example.utils.SecurePreferences;
+import com.oceansky.calendar.example.constant.Constants;
+import com.oceansky.calendar.example.entity.CourseBeanForAdapter;
+import com.oceansky.calendar.example.event.LoginSuccessEvent;
+import com.oceansky.calendar.example.event.RxBus;
+import com.oceansky.calendar.example.network.http.ApiException;
+import com.oceansky.calendar.example.network.response.CourseEntity;
+import com.oceansky.calendar.example.R;
+import com.oceansky.calendar.example.adapter.CourseAdapter;
+import com.oceansky.calendar.example.customviews.BGAJHYXRefreshViewHolder;
+import com.oceansky.calendar.example.customviews.CustomListView;
+import com.oceansky.calendar.example.network.http.HttpManager;
+import com.oceansky.calendar.example.network.subscribers.LoadingSubscriber;
+import com.oceansky.calendar.example.utils.LogHelper;
+import com.oceansky.calendar.example.utils.NetworkUtils;
+import com.oceansky.calendar.example.utils.SecurePreferences;
 
 import java.util.ArrayList;
 

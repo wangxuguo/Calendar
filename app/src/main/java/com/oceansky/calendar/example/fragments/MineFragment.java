@@ -1,4 +1,4 @@
-package com.oceansky.example.fragments;
+package com.oceansky.calendar.example.fragments;
 
 
 import android.app.Activity;
@@ -18,24 +18,24 @@ import android.widget.Toast;
 
 import com.anupcowkur.reservoir.Reservoir;
 import com.igexin.sdk.PushManager;
-import com.oceansky.example.BuildConfig;
-import com.oceansky.example.R;
-import com.oceansky.example.constant.Constants;
-import com.oceansky.example.constant.FeatureConfig;
-import com.oceansky.example.customviews.BGAJHYXRefreshViewHolder;
-import com.oceansky.example.customviews.RefreshScrollView;
-import com.oceansky.example.network.http.ApiException;
-import com.oceansky.example.network.http.HttpManager;
-import com.oceansky.example.network.response.RedPointEntity;
-import com.oceansky.example.network.response.TeacherInforEntity;
-import com.oceansky.example.network.subscribers.BaseSubscriber;
-import com.oceansky.example.network.subscribers.LoadingSubscriber;
-import com.oceansky.example.utils.ImageUtils;
-import com.oceansky.example.utils.LogHelper;
-import com.oceansky.example.utils.NetworkUtils;
-import com.oceansky.example.utils.SecurePreferences;
-import com.oceansky.example.utils.SharePreferenceUtils;
-import com.oceansky.example.utils.ToastUtil;
+import com.oceansky.calendar.example.constant.Constants;
+import com.oceansky.calendar.example.constant.FeatureConfig;
+import com.oceansky.calendar.example.network.http.ApiException;
+import com.oceansky.calendar.example.network.response.TeacherInforEntity;
+import com.oceansky.calendar.example.utils.ImageUtils;
+import com.oceansky.calendar.example.utils.ToastUtil;
+import com.oceansky.calendar.example.BuildConfig;
+import com.oceansky.calendar.example.R;
+import com.oceansky.calendar.example.customviews.BGAJHYXRefreshViewHolder;
+import com.oceansky.calendar.example.customviews.RefreshScrollView;
+import com.oceansky.calendar.example.network.http.HttpManager;
+import com.oceansky.calendar.example.network.response.RedPointEntity;
+import com.oceansky.calendar.example.network.subscribers.BaseSubscriber;
+import com.oceansky.calendar.example.network.subscribers.LoadingSubscriber;
+import com.oceansky.calendar.example.utils.LogHelper;
+import com.oceansky.calendar.example.utils.NetworkUtils;
+import com.oceansky.calendar.example.utils.SecurePreferences;
+import com.oceansky.calendar.example.utils.SharePreferenceUtils;
 import com.umeng.analytics.MobclickAgent;
 
 import cn.bingoogolapple.refreshlayout.BGARefreshLayout;

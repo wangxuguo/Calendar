@@ -51,27 +51,27 @@
             android:gravity="center_vertical"
             android:padding="3dp">
 
-            <com.oceansky.teacher.customviews.pickerview.LoopView
+            <com.oceansky.calendar.example.customviews.pickerview.LoopView
                 android:id="@+id/picker_year"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"/>
 
-            <com.oceansky.teacher.customviews.pickerview.LoopView
+            <com.oceansky.calendar.example.customviews.pickerview.LoopView
                 android:id="@+id/picker_month"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="1dp"
                 android:layout_weight="1"/>
 
-            <com.oceansky.teacher.customviews.pickerview.LoopView
+            <com.oceansky.calendar.example.customviews.pickerview.LoopView
                 android:id="@+id/picker_day"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="1dp"
                 android:layout_weight="1"/>
 
-            <com.oceansky.teacher.customviews.pickerview.LoopView
+            <com.oceansky.calendar.example.customviews.pickerview.LoopView
                 android:id="@+id/picker_hour"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -79,7 +79,7 @@
                 android:layout_weight="1"
                 android:visibility="gone"/>
 
-            <com.oceansky.teacher.customviews.pickerview.LoopView
+            <com.oceansky.calendar.example.customviews.pickerview.LoopView
                 android:id="@+id/picker_minute"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"

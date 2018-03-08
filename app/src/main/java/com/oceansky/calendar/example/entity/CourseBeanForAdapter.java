@@ -1,4 +1,4 @@
-package com.oceansky.example.entity;
+package com.oceansky.calendar.example.entity;
 
 import java.io.Serializable;
 

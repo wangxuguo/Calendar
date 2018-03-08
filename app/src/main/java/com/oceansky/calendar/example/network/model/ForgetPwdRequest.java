@@ -1,4 +1,4 @@
-package com.oceansky.example.network.model;
+package com.oceansky.calendar.example.network.model;
 
 /**
  * Created by tangqifa on 16/3/11.

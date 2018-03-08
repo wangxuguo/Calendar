@@ -1,4 +1,4 @@
-package com.oceansky.example.fragments;
+package com.oceansky.calendar.example.fragments;
 
 
 import android.content.BroadcastReceiver;
@@ -19,17 +19,17 @@ import android.widget.TextView;
 
 import com.anupcowkur.reservoir.Reservoir;
 import com.google.gson.reflect.TypeToken;
-import com.oceansky.example.R;
-import com.oceansky.example.adapter.ClassListAdapter;
-import com.oceansky.example.constant.Constants;
-import com.oceansky.example.customviews.RefreshListView;
-import com.oceansky.example.network.http.ApiException;
-import com.oceansky.example.network.http.HttpManager;
-import com.oceansky.example.network.response.ClassListEntity;
-import com.oceansky.example.network.subscribers.LoadingSubscriber;
-import com.oceansky.example.utils.LogHelper;
-import com.oceansky.example.utils.NetworkUtils;
-import com.oceansky.example.utils.SecurePreferences;
+import com.oceansky.calendar.example.constant.Constants;
+import com.oceansky.calendar.example.customviews.RefreshListView;
+import com.oceansky.calendar.example.network.http.ApiException;
+import com.oceansky.calendar.example.R;
+import com.oceansky.calendar.example.adapter.ClassListAdapter;
+import com.oceansky.calendar.example.network.http.HttpManager;
+import com.oceansky.calendar.example.network.response.ClassListEntity;
+import com.oceansky.calendar.example.network.subscribers.LoadingSubscriber;
+import com.oceansky.calendar.example.utils.LogHelper;
+import com.oceansky.calendar.example.utils.NetworkUtils;
+import com.oceansky.calendar.example.utils.SecurePreferences;
 import com.umeng.analytics.MobclickAgent;
 
 import java.util.ArrayList;

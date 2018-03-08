@@ -1,4 +1,4 @@
-package com.oceansky.example;
+package com.oceansky.calendar.example;
 
 import android.Manifest;
 import android.annotation.SuppressLint;
@@ -21,11 +21,11 @@ import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
 import com.nostra13.universalimageloader.core.assist.QueueProcessingType;
 import com.nostra13.universalimageloader.core.download.BaseImageDownloader;
-import com.oceansky.example.constant.Constants;
-import com.oceansky.example.constant.FeatureConfig;
-import com.oceansky.example.customviews.photoSelector.listener.UILPauseOnScrollListener;
-import com.oceansky.example.customviews.photoSelector.loader.UILImageLoader;
-import com.oceansky.example.utils.LogHelper;
+import com.oceansky.calendar.example.constant.Constants;
+import com.oceansky.calendar.example.constant.FeatureConfig;
+import com.oceansky.calendar.example.customviews.photoSelector.listener.UILPauseOnScrollListener;
+import com.oceansky.calendar.example.customviews.photoSelector.loader.UILImageLoader;
+import com.oceansky.calendar.example.utils.LogHelper;
 import com.umeng.analytics.MobclickAgent;
 
 import java.io.IOException;

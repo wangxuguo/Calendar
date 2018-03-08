@@ -1,7 +1,7 @@
-package com.oceansky.example.network.http;
+package com.oceansky.calendar.example.network.http;
 
 import com.facebook.stetho.okhttp3.StethoInterceptor;
-import com.oceansky.example.constant.FeatureConfig;
+import com.oceansky.calendar.example.constant.FeatureConfig;
 
 import okhttp3.OkHttpClient;
 import okhttp3.logging.HttpLoggingInterceptor;

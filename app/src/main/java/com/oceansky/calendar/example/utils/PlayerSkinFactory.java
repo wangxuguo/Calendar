@@ -1,4 +1,4 @@
-package com.oceansky.example.utils;
+package com.oceansky.calendar.example.utils;
 
 import com.letv.controller.interfacev1.ISplayerController;
 import com.letv.skin.BaseSkin;

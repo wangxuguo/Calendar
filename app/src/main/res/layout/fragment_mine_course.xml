@@ -2,7 +2,7 @@
              xmlns:tools="http://schemas.android.com/tools"
              android:layout_width="match_parent"
              android:layout_height="match_parent"
-             tools:context="com.oceansky.teacher.fragments.MineCourseFragment">
+             tools:context=".fragments.MineCourseFragment">
 
     <cn.bingoogolapple.refreshlayout.BGARefreshLayout
         android:id="@+id/course_layout_refresh"
@@ -11,7 +11,7 @@
         android:background="@android:color/transparent"
         android:visibility="gone">
 
-        <com.oceansky.teacher.customviews.CustomListView
+        <com.oceansky.calendar.example.customviews.CustomListView
             android:id="@+id/course_lv"
             android:layout_width="match_parent"
             android:layout_height="0dp"

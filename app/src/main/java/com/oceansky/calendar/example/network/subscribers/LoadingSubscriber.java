@@ -1,8 +1,8 @@
-package com.oceansky.example.network.subscribers;
+package com.oceansky.calendar.example.network.subscribers;
 
 import android.content.Context;
 
-import com.oceansky.example.utils.LogHelper;
+import com.oceansky.calendar.example.utils.LogHelper;
 
 /**
  * User: dengfa

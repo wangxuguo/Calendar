@@ -1,4 +1,4 @@
-package com.oceansky.calendar.example.oceansky_android_teacher;
+package com.oceansky.example.oceansky_android_teacher;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

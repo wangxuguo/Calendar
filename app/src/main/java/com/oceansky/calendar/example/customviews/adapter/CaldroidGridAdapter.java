@@ -1,4 +1,4 @@
-package com.oceansky.example.customviews.adapter;
+package com.oceansky.calendar.example.customviews.adapter;
 
 import android.content.Context;
 import android.content.res.ColorStateList;
@@ -13,13 +13,12 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
-
-import com.oceansky.example.R;
-import com.oceansky.example.constant.CaldroidCustomConstant;
-import com.oceansky.example.customviews.CellView;
-import com.oceansky.example.customviews.ViewMode;
-import com.oceansky.example.utils.CalendarHelper;
-import com.oceansky.example.utils.LogHelper;
+import com.oceansky.calendar.example.R;
+import com.oceansky.calendar.example.constant.CaldroidCustomConstant;
+import com.oceansky.calendar.example.customviews.CellView;
+import com.oceansky.calendar.example.customviews.ViewMode;
+import com.oceansky.calendar.example.utils.CalendarHelper;
+import com.oceansky.calendar.example.utils.LogHelper;
 
 import org.joda.time.DateTime;
 

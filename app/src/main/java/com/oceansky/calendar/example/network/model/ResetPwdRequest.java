@@ -1,4 +1,4 @@
-package com.oceansky.example.network.model;
+package com.oceansky.calendar.example.network.model;
 
 public class ResetPwdRequest {
     private String new_password;

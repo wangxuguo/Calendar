@@ -1,4 +1,4 @@
-package com.oceansky.example.event;
+package com.oceansky.calendar.example.event;
 
 import com.hwangjr.rxbus.Bus;
 import com.hwangjr.rxbus.thread.ThreadEnforcer;

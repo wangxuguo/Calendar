@@ -1,4 +1,4 @@
-package com.oceansky.example.fragments;
+package com.oceansky.calendar.example.fragments;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -12,13 +12,12 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
-
-import com.oceansky.example.R;
-import com.oceansky.example.constant.CaldroidCustomConstant;
-import com.oceansky.example.customviews.adapter.TeacherCourseAdapter;
-import com.oceansky.example.entity.TearcherCourseListItemBean;
-import com.oceansky.example.manager.TeacherCourseManager;
-import com.oceansky.example.utils.LogHelper;
+import com.oceansky.calendar.example.R;
+import com.oceansky.calendar.example.constant.CaldroidCustomConstant;
+import com.oceansky.calendar.example.customviews.adapter.TeacherCourseAdapter;
+import com.oceansky.calendar.example.entity.TearcherCourseListItemBean;
+import com.oceansky.calendar.example.manager.TeacherCourseManager;
+import com.oceansky.calendar.example.utils.LogHelper;
 
 import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Subscribe;

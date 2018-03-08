@@ -1,4 +1,4 @@
-package com.oceansky.example.network.model;
+package com.oceansky.calendar.example.network.model;
 /**
  * User: dengfa
  * Date: 16/8/24

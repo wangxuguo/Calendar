@@ -1,8 +1,8 @@
-package com.oceansky.example.utils;
+package com.oceansky.calendar.example.utils;
 
 import android.util.Log;
 
-import com.oceansky.example.constant.FeatureConfig;
+import com.oceansky.calendar.example.constant.FeatureConfig;
 
 import java.io.PrintWriter;
 import java.io.StringWriter;

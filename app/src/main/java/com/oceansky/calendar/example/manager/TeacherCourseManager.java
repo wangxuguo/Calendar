@@ -1,17 +1,17 @@
-package com.oceansky.example.manager;
+package com.oceansky.calendar.example.manager;
 
 import android.content.Context;
 
 import com.anupcowkur.reservoir.Reservoir;
 import com.google.gson.reflect.TypeToken;
-import com.oceansky.example.constant.CaldroidCustomConstant;
-import com.oceansky.example.constant.Constants;
-import com.oceansky.example.entity.TearcherCourseListItemBean;
-import com.oceansky.example.network.http.HttpManager;
-import com.oceansky.example.network.response.TeacherCourseEntity;
-import com.oceansky.example.network.subscribers.BaseSubscriber;
-import com.oceansky.example.utils.LogHelper;
-import com.oceansky.example.utils.SecurePreferences;
+import com.oceansky.calendar.example.constant.Constants;
+import com.oceansky.calendar.example.network.response.TeacherCourseEntity;
+import com.oceansky.calendar.example.network.subscribers.BaseSubscriber;
+import com.oceansky.calendar.example.utils.SecurePreferences;
+import com.oceansky.calendar.example.constant.CaldroidCustomConstant;
+import com.oceansky.calendar.example.entity.TearcherCourseListItemBean;
+import com.oceansky.calendar.example.network.http.HttpManager;
+import com.oceansky.calendar.example.utils.LogHelper;
 
 import org.greenrobot.eventbus.EventBus;
 import org.joda.time.DateTime;

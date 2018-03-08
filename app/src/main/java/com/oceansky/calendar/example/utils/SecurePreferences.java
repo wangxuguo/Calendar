@@ -1,4 +1,4 @@
-package com.oceansky.example.utils;
+package com.oceansky.calendar.example.utils;
 
 /*
 Copyright (C) 2012 Sveinung Kval Bakken, sveinung.bakken@gmail.com

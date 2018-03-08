@@ -12,7 +12,7 @@
         android:layout_height="match_parent"
         android:background="@android:color/transparent">
 
-        <com.oceansky.teacher.customviews.RefreshScrollView
+        <com.oceansky.calendar.example.customviews.RefreshScrollView
             android:id="@+id/mine_scrollview_refresh"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
@@ -342,7 +342,7 @@
                     android:text="Version Information:"/>
             </LinearLayout>
 
-        </com.oceansky.teacher.customviews.RefreshScrollView>
+        </com.oceansky.calendar.example.customviews.RefreshScrollView>
 
     </cn.bingoogolapple.refreshlayout.BGARefreshLayout>
 

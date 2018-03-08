@@ -1,4 +1,4 @@
-package com.oceansky.example.utils;
+package com.oceansky.calendar.example.utils;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;

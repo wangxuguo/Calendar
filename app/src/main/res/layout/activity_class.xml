@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/activity_bg_gray"
     android:orientation="vertical"
-    tools:context="com.oceansky.teacher.activities.ClassActivity">
+    tools:context="com.oceansky.example.activities.ClassActivity">
 
     <include
         android:id="@+id/title_bar"
@@ -23,7 +23,7 @@
             android:background="@android:color/transparent"
             android:visibility="gone">
 
-            <com.oceansky.teacher.customviews.CustomGridView
+            <com.oceansky.calendar.example.customviews.CustomGridView
                 android:id="@+id/class_student_gv"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"

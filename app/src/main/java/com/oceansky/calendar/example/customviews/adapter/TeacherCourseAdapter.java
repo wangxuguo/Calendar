@@ -1,4 +1,4 @@
-package com.oceansky.example.customviews.adapter;
+package com.oceansky.calendar.example.customviews.adapter;
 
 import android.content.Context;
 import android.view.View;
@@ -6,8 +6,8 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
-import com.oceansky.example.R;
-import com.oceansky.example.entity.TearcherCourseListItemBean;
+import com.oceansky.calendar.example.entity.TearcherCourseListItemBean;
+import com.oceansky.calendar.example.R;
 
 import org.joda.time.DateTime;
 

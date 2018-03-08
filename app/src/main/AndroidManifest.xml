@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="com.oceansky.teacher">
+          package="com.oceansky.calendar.example">
 
     <uses-permission android:name="android.permission.CALL_PHONE"/>
     <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
@@ -135,7 +135,7 @@
         <!-- 把"你的包名"替换为第三方应用的包名 -->
         <provider
             android:name="com.igexin.download.DownloadProvider"
-            android:authorities="downloads.com.oceansky.teacher"
+            android:authorities="downloads.com.oceansky.example"
             android:exported="true"
             android:process=":pushservice"/>
 

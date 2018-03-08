@@ -1,4 +1,4 @@
-package com.oceansky.example.fragments;
+package com.oceansky.calendar.example.fragments;
 
 
 import android.content.DialogInterface;
@@ -10,11 +10,11 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.oceansky.example.R;
-import com.oceansky.example.constant.Constants;
-import com.oceansky.example.customviews.CustomDialog;
-import com.oceansky.example.utils.LogHelper;
-import com.oceansky.example.utils.ToastUtil;
+import com.oceansky.calendar.example.R;
+import com.oceansky.calendar.example.constant.Constants;
+import com.oceansky.calendar.example.customviews.CustomDialog;
+import com.oceansky.calendar.example.utils.LogHelper;
+import com.oceansky.calendar.example.utils.ToastUtil;
 import com.shizhefei.fragment.LazyFragment;
 import com.umeng.analytics.MobclickAgent;
 

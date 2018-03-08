@@ -1,6 +1,6 @@
-package com.oceansky.example.network.transformer;
+package com.oceansky.calendar.example.network.transformer;
 
-import com.oceansky.example.network.response.HttpResponse;
+import com.oceansky.calendar.example.network.response.HttpResponse;
 
 import rx.Observable;
 

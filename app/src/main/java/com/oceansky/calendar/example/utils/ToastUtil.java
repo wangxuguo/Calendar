@@ -1,10 +1,10 @@
-package com.oceansky.example.utils;
+package com.oceansky.calendar.example.utils;
 
 import android.content.Context;
 import android.view.Gravity;
 import android.widget.Toast;
 
-import com.oceansky.example.R;
+import com.oceansky.calendar.example.R;
 
 /**
  * copy..

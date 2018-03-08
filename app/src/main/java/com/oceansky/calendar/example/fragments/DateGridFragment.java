@@ -1,4 +1,4 @@
-package com.oceansky.example.fragments;
+package com.oceansky.calendar.example.fragments;
 
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
@@ -10,8 +10,8 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.GridView;
 
-import com.oceansky.example.R;
-import com.oceansky.example.customviews.adapter.CaldroidGridAdapter;
+import com.oceansky.calendar.example.customviews.adapter.CaldroidGridAdapter;
+import com.oceansky.calendar.example.R;
 
 /**
  * Created by administrator on 16/6/2.

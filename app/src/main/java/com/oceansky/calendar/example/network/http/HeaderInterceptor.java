@@ -1,6 +1,6 @@
-package com.oceansky.example.network.http;
+package com.oceansky.calendar.example.network.http;
 
-import com.oceansky.example.constant.Constants;
+import com.oceansky.calendar.example.constant.Constants;
 
 import java.io.IOException;
 

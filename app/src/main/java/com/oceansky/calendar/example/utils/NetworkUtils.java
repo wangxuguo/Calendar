@@ -1,4 +1,4 @@
-package com.oceansky.example.utils;
+package com.oceansky.calendar.example.utils;
 
 import android.content.Context;
 import android.net.ConnectivityManager;
@@ -6,7 +6,7 @@ import android.net.NetworkInfo;
 import android.telephony.TelephonyManager;
 import android.text.TextUtils;
 
-import com.oceansky.example.constant.FeatureConfig;
+import com.oceansky.calendar.example.constant.FeatureConfig;
 
 import java.net.InetAddress;
 import java.net.NetworkInterface;
