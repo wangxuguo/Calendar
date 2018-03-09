@@ -1,19 +1,15 @@
-apply plugin: 'com.android.application'
+apply plugin: 'com.android.library'
 
 android {
     compileSdkVersion 26
-    buildToolsVersion "27.0.3"
+    buildToolsVersion "26.0.1"
 
 
     defaultConfig {
-        applicationId "com.oceansky.calendar.library"
         minSdkVersion 15
         targetSdkVersion 26
         versionCode 1
         versionName "1.0"
-
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
-
     }
 
     buildTypes {
@@ -32,5 +28,6 @@ dependencies {
     androidTestCompile('com.android.support.test.espresso:espresso-core:3.0.1', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
-
+    compile 'joda-time:joda-time:2.9.4'
+    compile 'org.greenrobot:eventbus:3.1.1'
 }

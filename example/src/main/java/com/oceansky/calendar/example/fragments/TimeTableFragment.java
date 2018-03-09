@@ -1,9 +1,6 @@
 package com.oceansky.calendar.example.fragments;
 
-import android.content.BroadcastReceiver;
 import android.content.Context;
-import android.content.Intent;
-import android.content.IntentFilter;
 import android.graphics.drawable.BitmapDrawable;
 import android.os.Build;
 import android.os.Bundle;
@@ -12,7 +9,6 @@ import android.os.Message;
 import android.support.annotation.Nullable;
 import android.support.annotation.UiThread;
 import android.support.v4.app.Fragment;
-import android.text.TextUtils;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -27,20 +23,18 @@ import android.widget.PopupWindow;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.anupcowkur.reservoir.Reservoir;
-import com.oceansky.calendar.example.constant.Constants;
-import com.oceansky.calendar.example.customviews.CoursesViewpager;
+import com.oceansky.calendar.example.adapter.WeekdayArrayAdapter;
+import com.oceansky.calendar.library.customviews.CoursesViewpager;
 import com.oceansky.calendar.example.adapter.PickWeekAdapter;
 import com.oceansky.calendar.example.R;
-import com.oceansky.calendar.example.customviews.DateCalendar;
-import com.oceansky.calendar.example.customviews.ViewMode;
-import com.oceansky.calendar.example.customviews.adapter.CoursesPageChangedLister;
-import com.oceansky.calendar.example.customviews.adapter.CoursesViewPagerAdapter;
-import com.oceansky.calendar.example.customviews.adapter.InfiniteCoursePageAdapter;
-import com.oceansky.calendar.example.customviews.adapter.WeekdayArrayAdapter;
+import com.oceansky.calendar.library.customviews.DateCalendar;
+import com.oceansky.calendar.library.customviews.ViewMode;
+import com.oceansky.calendar.library.adapter.CoursesPageChangedLister;
+import com.oceansky.calendar.library.adapter.CoursesViewPagerAdapter;
+import com.oceansky.calendar.library.adapter.InfiniteCoursePageAdapter;
 import com.oceansky.calendar.example.manager.TeacherCourseManager;
-import com.oceansky.calendar.example.utils.DisplayUtils;
-import com.oceansky.calendar.example.utils.LogHelper;
+import com.oceansky.calendar.library.utils.DisplayUtils;
+import com.oceansky.calendar.library.utils.LogHelper;
 import com.umeng.analytics.MobclickAgent;
 
 import org.greenrobot.eventbus.EventBus;
@@ -50,8 +44,6 @@ import org.greenrobot.eventbus.Subscribe;
 import org.joda.time.DateTime;
 
 import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Map;
 
 import rx.Subscription;
 

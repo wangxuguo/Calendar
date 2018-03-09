@@ -5,7 +5,7 @@ import android.content.Context;
 import com.anupcowkur.reservoir.Reservoir;
 import com.oceansky.calendar.example.constant.CaldroidCustomConstant;
 import com.oceansky.calendar.example.entity.TearcherCourseListItemBean;
-import com.oceansky.calendar.example.utils.LogHelper;
+import com.oceansky.calendar.library.utils.LogHelper;
 
 //import org.greenrobot.eventbus.EventBus;
 

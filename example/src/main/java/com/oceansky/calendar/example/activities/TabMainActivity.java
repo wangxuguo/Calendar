@@ -11,18 +11,13 @@ import android.view.KeyEvent;
 import android.widget.Toast;
 
 import com.oceansky.calendar.example.R;
-import com.oceansky.calendar.example.utils.LogHelper;
-import com.oceansky.calendar.example.utils.ToastUtil;
+import com.oceansky.calendar.library.utils.LogHelper;
 
 import rx.Subscription;
 
 public class TabMainActivity extends FragmentActivity {
 
     private static final String TAG                         = TabMainActivity.class.getSimpleName();
-    public static final  int    TAB_COURES                  = 0;
-    public static final  int    TAB_CLASS                   = 1;
-    public static final  int    TAB_MINE                    = 2;
-    private static final int    PERMISSIONS_REQUEST_STORAGE = 1;
 
 //    private IndicatorViewPager mIndicatorViewPager;
 //    private SViewPager         mViewPager;
@@ -238,7 +233,7 @@ public class TabMainActivity extends FragmentActivity {
 //        @Override
 //        public View getViewForTab(int position, View convertView, ViewGroup container) {
 //            if (convertView == null) {
-//                convertView = mInflater.inflate(R.layout.main_tab_item, container, false);
+//                convertView = mInflater.inflate(R.layout_date_calendar.main_tab_item, container, false);
 //            }
 //            TextView textView = (TextView) convertView.findViewById(R.id.text);
 //            textView.setText(mTabNameArray[position]);
@@ -273,7 +268,7 @@ public class TabMainActivity extends FragmentActivity {
         if (keyCode == KeyEvent.KEYCODE_BACK) {
             long secondTime = System.currentTimeMillis();
             if (secondTime - mFirstTime > 2000) {
-                ToastUtil.showToastBottom(this, "再按一次退出", Toast.LENGTH_SHORT);
+                Toast.makeText(this, "再按一次退出", Toast.LENGTH_SHORT);
                 mFirstTime = secondTime;
                 return true;
             } else {
@@ -321,25 +316,6 @@ public class TabMainActivity extends FragmentActivity {
         }
         return true;
     }
-
-    @Override
-    public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
-        LogHelper.d(TAG, "onRequestPermissionsResult");
-        if (requestCode == PERMISSIONS_REQUEST_STORAGE) {
-            if (verifyPermissions(grantResults)) {
-//                if (AndroidApplication.canUpdate) {
-//                    BmobUpdateAgent.forceUpdate(this);
-//                } else {
-//                    BmobUpdateAgent.update(this);
-//                }
-            } else {
-//                showTipDialog();
-            }
-            return;
-        }
-        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
-    }
-
     @Override
     protected void onDestroy() {
         super.onDestroy();

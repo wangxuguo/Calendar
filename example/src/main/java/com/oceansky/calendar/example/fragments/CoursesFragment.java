@@ -14,14 +14,15 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import com.oceansky.calendar.example.R;
+import com.oceansky.calendar.example.adapter.TeacherCourseAdapter;
 import com.oceansky.calendar.example.constant.CaldroidCustomConstant;
-import com.oceansky.calendar.example.customviews.adapter.TeacherCourseAdapter;
 import com.oceansky.calendar.example.entity.TearcherCourseListItemBean;
 import com.oceansky.calendar.example.manager.TeacherCourseManager;
-import com.oceansky.calendar.example.utils.LogHelper;
+import com.oceansky.calendar.library.utils.LogHelper;
 
-//import org.greenrobot.eventbus.EventBus;
-//import org.greenrobot.eventbus.Subscribe;
+import org.greenrobot.eventbus.EventBus;
+import org.greenrobot.eventbus.Subscribe;
+import org.greenrobot.eventbus.EventBus;
 import org.joda.time.DateTime;
 
 
@@ -173,13 +174,13 @@ public class CoursesFragment extends Fragment {
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);
-//        EventBus.getDefault().register(this);
+        EventBus.getDefault().register(this);
     }
 
     @Override
     public void onDetach() {
         super.onDetach();
-//        EventBus.getDefault().unregister(this);
+        EventBus.getDefault().unregister(this);
     }
 
     public DateTime getDateTime() {

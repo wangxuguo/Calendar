@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.oceansky.calendar.example.customviews.CalendarViewPager xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/calendar_view_month"
-    android:layout_width="fill_parent"
-    android:layout_height="234.0dip"
-    android:scrollbarStyle="outsideOverlay">
-</com.oceansky.calendar.example.customviews.CalendarViewPager>

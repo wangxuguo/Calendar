@@ -92,7 +92,7 @@
         android:paddingBottom="4dp"
         android:numColumns="7"
         android:stretchMode="columnWidth"></GridView>
-    <com.oceansky.calendar.example.customviews.DateCalendar
+    <com.oceansky.calendar.library.customviews.DateCalendar
         android:id="@+id/pagers_container"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
@@ -100,12 +100,12 @@
         android:background="#ffffffff"
         android:paddingLeft="3.0dip"
         android:paddingRight="3.0dip" >
-        <include layout="@layout/frag_month_view"/>
+<!--        <incllayout_date_calendaryoulayout_date_calendaryout/frag_month_view"/>
+        <incllayout_date_calendaryoulayout_date_calendaryout/frag_week_view" />-->
             <!--android:layout_width="fill_parent"-->
             <!--android:layout_height="wrap_content"-->
             <!--android:layout_marginTop="0dp"/>-->
-        <include layout="@layout/frag_week_view" />
-    </com.oceansky.calendar.example.customviews.DateCalendar>
+    </com.oceansky.calendar.library.customviews.DateCalendar>
     <View
         android:id="@+id/divide_line"
         android:layout_below="@+id/pagers_container"
@@ -113,13 +113,13 @@
         android:layout_height="1px"
         android:background="#e8e8e8"
         />
-    <com.oceansky.calendar.example.customviews.CoursesViewpager
+    <com.oceansky.calendar.library.customviews.CoursesViewpager
         android:id="@+id/vp_class"
         android:layout_below="@+id/divide_line"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         />
         <!--<include-->
-            <!--layout="@layout/layout_nologin_page"-->
+            layout_date_calendaryoulayout_date_calendaryout/layout_nologin_page"-->
             <!--/>-->
 </RelativeLayout>

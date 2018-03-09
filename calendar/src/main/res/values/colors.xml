@@ -3,4 +3,18 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+
+    <color name="caldroid_white">#ffffff</color>
+    <color name="caldroid_selected">#33556688</color>
+    <color name="caldroid_black">#333333</color>
+    <color name="caldroid_transparent">#00000000</color>
+    <!-- For settings framework -->
+    <color name="caldroid_lighter_gray">#666666</color>
+    <color name="caldroid_gray">#CCC</color>
+    <color name="caldroid_middle_gray">#666666</color>
+    <color name="caldroid_title_bg">#62c8a6</color>
+    <color name="caldroid_today_textcolor">#1c95f3</color>
+    <color name="white">#ffffff</color>
+    <color name="caldroid_cell_dot_color">#ff843a</color>
+    <color name="caldroid_darker_gray">#cccccc</color>
 </resources>
