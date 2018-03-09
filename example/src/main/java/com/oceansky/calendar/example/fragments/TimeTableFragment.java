@@ -521,76 +521,76 @@ public class TimeTableFragment extends Fragment implements View.OnClickListener 
     };
     private boolean isFromLogin = false;
     private String mPushEvent;//如果 推送来个人信息,进入消息中心需要到个人消息页面
-    BroadcastReceiver loginInOutReceiver = new BroadcastReceiver() {
-        @Override
-        public void onReceive(Context context, Intent intent) {
-            LogHelper.d(tag, "onReceive: " + intent.getAction());
-            if (intent.getAction().equals(Constants.LOGIN_SUCCESS_BROADCAST)) {
-                isFromLogin = true;
-                if (curSelectedDateTime == null) {
-                    curSelectedDateTime = DateTime.now();
-                }
-                //                initLeftImage();
-                //                vp_class.setAdapter(null);
-                //                LogHelper.d(tag, "LOGIN: " + curSelectedDateTime.toString(CaldroidCustomConstant.simpleFormator));
-                teacherCourseManager.init(curSelectedDateTime == null ? DateTime.now() : curSelectedDateTime);
-                teacherCourseManager.setLoginState(true);
-                pagers_container.setTextDotForDateTimeMap(teacherCourseManager.getHaveCourseMap());
-                //                if (coursesViewPagerAdapter == null) {
-                //                    LogHelper.d(tag, "coursesViewPagerAdapter  null)");
-                //                    coursesViewPagerAdapter = new CoursesViewPagerAdapter(getChildFragmentManager(), curSelectedDateTime);
-                //
-                //                }
-                //                if (infiniteCoursePageAdapter == null) {
-                //                    LogHelper.d(tag, "infiniteCoursePageAdapter  null)");
-                //                    infiniteCoursePageAdapter = new InfiniteCoursePageAdapter(coursesViewPagerAdapter);
-                //                }
-                //                if (coursesPageChangedLister == null) {
-                //                    LogHelper.d(tag, "coursesPageChangedLister  null)");
-                //                    coursesPageChangedLister = new CoursesPageChangedLister(pagers_container, infiniteCoursePageAdapter, curSelectedDateTime);
-                //                    coursesPageChangedLister.setFragments(coursesViewPagerAdapter.getFragments());
-                //                }
-                coursesPageChangedLister.setCurDateTime(curSelectedDateTime);
-                //                pagers_container.setCoursePageChangedListener(coursesPageChangedLister);
-                //                pagers_container.setInfiniteCoursePageAdapter(infiniteCoursePageAdapter);
-                //                vp_class.setMonthCalendar(pagers_container.monthCalendar);
-                //                vp_class.setAdapter(infiniteCoursePageAdapter);
-                //                vp_class.setCurrentItem(1000);
-                //                vp_class.setOffscreenPageLimit(1);
-                pagers_container.refreshMonthView();
-                pagers_container.refreshWeeksView();
-                //                vp_class.addOnPageChangeListener(coursesPageChangedLister);
-
-                teacherCourseManager.initToday_before_after_6_month(DateTime.now());
-                //                infiniteCoursePageAdapter.notifyDataSetChanged();
-            } else if (intent.getAction().equals(Constants.LOGOUT_SUCCESS_BROADCAST)) {
-                setleftimageRedTip(false);
-                teacherCourseManager.setLoginState(false);
-                Map<DateTime, Integer> dotMap = new HashMap<>();
-                pagers_container.setTextDotForDateTimeMap(dotMap);
-                //                CoursesNotLoginAdapter coursesNotLoginAdapter = new CoursesNotLoginAdapter(getActivity());
-                //                vp_class.setAdapter(coursesNotLoginAdapter);
-                Map<DateTime, Integer> map = new HashMap<>();
-                pagers_container.setTextDotForDateTimeMap(map);
-                infiniteCoursePageAdapter.notifyDataSetChanged();
-                coursesPageChangedLister.setCurDateTime(curSelectedDateTime);
-                pagers_container.refreshMonthView();
-                pagers_container.refreshWeeksView();
-            } else if (intent.getAction().equals(Constants.ACTION_RECEIVE_PUSH)) {//接收到新的推送消息
-//                initRedDot();
-                setleftimageRedTip(true);
-                //                mPushEvent = intent.getStringExtra(Constants.PUSH_EVENT);
-                //                if (mPushEvent != null) {
-                //                    LogHelper.d(tag, "mPushEvent: " + mPushEvent);
-                //                }
-
-            } else if (intent.getAction().equals(Constants.BROAD_MSGCENTER_HAVEREADALL)) {
-                setleftimageRedTip(false);
-            } else if (intent.getAction().equals(Constants.BROAD_PRI_MSG_READED)) {
-                mPri = 0;
-            }
-        }
-    };
+//    BroadcastReceiver loginInOutReceiver = new BroadcastReceiver() {
+//        @Override
+//        public void onReceive(Context context, Intent intent) {
+//            LogHelper.d(tag, "onReceive: " + intent.getAction());
+//            if (intent.getAction().equals(Constants.LOGIN_SUCCESS_BROADCAST)) {
+//                isFromLogin = true;
+//                if (curSelectedDateTime == null) {
+//                    curSelectedDateTime = DateTime.now();
+//                }
+//                //                initLeftImage();
+//                //                vp_class.setAdapter(null);
+//                //                LogHelper.d(tag, "LOGIN: " + curSelectedDateTime.toString(CaldroidCustomConstant.simpleFormator));
+//                teacherCourseManager.init(curSelectedDateTime == null ? DateTime.now() : curSelectedDateTime);
+//                teacherCourseManager.setLoginState(true);
+//                pagers_container.setTextDotForDateTimeMap(teacherCourseManager.getHaveCourseMap());
+//                //                if (coursesViewPagerAdapter == null) {
+//                //                    LogHelper.d(tag, "coursesViewPagerAdapter  null)");
+//                //                    coursesViewPagerAdapter = new CoursesViewPagerAdapter(getChildFragmentManager(), curSelectedDateTime);
+//                //
+//                //                }
+//                //                if (infiniteCoursePageAdapter == null) {
+//                //                    LogHelper.d(tag, "infiniteCoursePageAdapter  null)");
+//                //                    infiniteCoursePageAdapter = new InfiniteCoursePageAdapter(coursesViewPagerAdapter);
+//                //                }
+//                //                if (coursesPageChangedLister == null) {
+//                //                    LogHelper.d(tag, "coursesPageChangedLister  null)");
+//                //                    coursesPageChangedLister = new CoursesPageChangedLister(pagers_container, infiniteCoursePageAdapter, curSelectedDateTime);
+//                //                    coursesPageChangedLister.setFragments(coursesViewPagerAdapter.getFragments());
+//                //                }
+//                coursesPageChangedLister.setCurDateTime(curSelectedDateTime);
+//                //                pagers_container.setCoursePageChangedListener(coursesPageChangedLister);
+//                //                pagers_container.setInfiniteCoursePageAdapter(infiniteCoursePageAdapter);
+//                //                vp_class.setMonthCalendar(pagers_container.monthCalendar);
+//                //                vp_class.setAdapter(infiniteCoursePageAdapter);
+//                //                vp_class.setCurrentItem(1000);
+//                //                vp_class.setOffscreenPageLimit(1);
+//                pagers_container.refreshMonthView();
+//                pagers_container.refreshWeeksView();
+//                //                vp_class.addOnPageChangeListener(coursesPageChangedLister);
+//
+//                teacherCourseManager.initToday_before_after_6_month(DateTime.now());
+//                //                infiniteCoursePageAdapter.notifyDataSetChanged();
+//            } else if (intent.getAction().equals(Constants.LOGOUT_SUCCESS_BROADCAST)) {
+//                setleftimageRedTip(false);
+//                teacherCourseManager.setLoginState(false);
+//                Map<DateTime, Integer> dotMap = new HashMap<>();
+//                pagers_container.setTextDotForDateTimeMap(dotMap);
+//                //                CoursesNotLoginAdapter coursesNotLoginAdapter = new CoursesNotLoginAdapter(getActivity());
+//                //                vp_class.setAdapter(coursesNotLoginAdapter);
+//                Map<DateTime, Integer> map = new HashMap<>();
+//                pagers_container.setTextDotForDateTimeMap(map);
+//                infiniteCoursePageAdapter.notifyDataSetChanged();
+//                coursesPageChangedLister.setCurDateTime(curSelectedDateTime);
+//                pagers_container.refreshMonthView();
+//                pagers_container.refreshWeeksView();
+//            } else if (intent.getAction().equals(Constants.ACTION_RECEIVE_PUSH)) {//接收到新的推送消息
+////                initRedDot();
+//                setleftimageRedTip(true);
+//                //                mPushEvent = intent.getStringExtra(Constants.PUSH_EVENT);
+//                //                if (mPushEvent != null) {
+//                //                    LogHelper.d(tag, "mPushEvent: " + mPushEvent);
+//                //                }
+//
+//            } else if (intent.getAction().equals(Constants.BROAD_MSGCENTER_HAVEREADALL)) {
+//                setleftimageRedTip(false);
+//            } else if (intent.getAction().equals(Constants.BROAD_PRI_MSG_READED)) {
+//                mPri = 0;
+//            }
+//        }
+//    };
 
     /**
      * 设置左上角出现小红点
@@ -607,10 +607,10 @@ public class TimeTableFragment extends Fragment implements View.OnClickListener 
         boolean isCommonMsgRead = false;
         boolean isPersonMsgRead = false;
         try {
-            if (Reservoir.contains(Constants.IS_COMMONMSG_READEDALL)) {
-                isCommonMsgRead = Reservoir.get(Constants.IS_COMMONMSG_READEDALL, Boolean.class);
-                isPersonMsgRead = Reservoir.get(Constants.IS_PERSONMSG_READEDALL, Boolean.class);
-            }
+//            if (Reservoir.contains(Constants.IS_COMMONMSG_READEDALL)) {
+//                isCommonMsgRead = Reservoir.get(Constants.IS_COMMONMSG_READEDALL, Boolean.class);
+//                isPersonMsgRead = Reservoir.get(Constants.IS_PERSONMSG_READEDALL, Boolean.class);
+//            }
         } catch (Exception e) {
             e.printStackTrace();
         }
