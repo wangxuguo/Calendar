@@ -20,6 +20,7 @@
 
     <include
         android:id="@+id/empty_teachercourse"
+        android:visibility="visible"
         layout="@layout/layout_empty_teachercourse"
         />
 

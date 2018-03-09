@@ -92,7 +92,7 @@ public class CoursesFragment extends Fragment {
      */
     public void initViews() {
         if (list == null) {
-            emptyView.setVisibility(View.GONE);
+            emptyView.setVisibility(View.VISIBLE);
 //            nologinView.setVisibility(View.VISIBLE);
             LogHelper.d(TAG, "list size is empty ");
 //            ImageView iv = (ImageView) nologinView.findViewById(R.id.iv_image);
@@ -116,7 +116,7 @@ public class CoursesFragment extends Fragment {
             listView.setEmptyView(emptyView);
         } else {
             listView.setEmptyView(null);
-            emptyView.setVisibility(View.GONE);
+            emptyView.setVisibility(View.VISIBLE);
 //            nologinView.setVisibility(View.GONE);
             LogHelper.d(TAG, "list.size: " + list.size());
             for (int i = 0; i < list.size(); i++) {
