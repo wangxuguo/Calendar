@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Calendar</string>
+    <string name="teachercourse_have_noclass">本日无课</string>
+</resources>

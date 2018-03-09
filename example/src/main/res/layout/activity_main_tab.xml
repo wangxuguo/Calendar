@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:fitsSystemWindows="true"
+              android:orientation="vertical">
+    <fragment
+        android:id="@+id/fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        class="com.oceansky.calendar.example.fragments.TimeTableFragment"
+        />
+<!--
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <com.shizhefei.view.viewpager.SViewPager
+            android:id="@+id/main_tab_viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="50dp"/>
+
+        <com.shizhefei.view.indicator.FixedIndicatorView
+            android:id="@+id/main_tab_indicator"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/tab_height"
+            android:layout_alignParentBottom="true"
+            android:paddingTop="11dp"
+            android:background="@mipmap/bg_tab_with_shadow"/>
+    </RelativeLayout>
+-->
+
+</LinearLayout>
