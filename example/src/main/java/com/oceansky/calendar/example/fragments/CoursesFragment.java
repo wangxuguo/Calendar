@@ -143,7 +143,7 @@ public class CoursesFragment extends Fragment {
     }
 
     @UiThread
-//    @Subscribe
+    @Subscribe
     public void onTeacherCourseChanged(TeacherCourseManager.TeacherCourseChanged teacherCourseChanged) {
 
         if (teacherCourseManager == null) {
